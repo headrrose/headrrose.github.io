@@ -1,0 +1,39 @@
+img {
+    width: 35px;
+}
+
+button {
+        margin: 100 auto;
+        padding: 10px 20px;
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background-color: #ffffff;
+}
+
+nav a {
+  display: block;
+  color: rgb(0, 0, 0);
+  padding: 14px 20px;
+  display:flex
+}
+
+.Home {
+    margin-right: auto;
+}

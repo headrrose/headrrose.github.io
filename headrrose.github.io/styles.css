@@ -1,0 +1,101 @@
+.mainnav {
+  background-color: #ffff;
+  width: 100vw;
+  height: 6vw;
+}
+
+
+body {
+  background-image: linear-gradient(to right, #fef8e6ff, transparent), url(https://i.pinimg.com/236x/4e/df/14/4edf14c48c80a555bc4566a681965121.jpg);
+  display: flex;
+
+
+  padding: 0px;
+  margin: 0;
+}
+
+
+nav {
+  display: flex;
+  list-style: none;
+
+
+}
+
+
+.Hero-Section {
+  position: relative;
+  background-color: white;
+  background: linear-gradient(to right, white 55%, transparent 100%);
+  padding-bottom: 1%;
+  margin: 10px 500px 0px 10px;
+  padding-top: 10px;
+}
+
+
+.navbar {
+  display:flex;
+}
+
+
+.navitems {
+  justify-content: flex-end;
+  padding: 10px 50px;
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+
+.Home {
+  text-decoration: none;
+  color:#b77111;
+}
+
+
+.AboutUs {
+  text-decoration: none;
+  color:#b77111;
+}
+
+
+.Home:hover {
+  background-color: aquamarine;
+}
+
+
+.AboutUs:hover {
+  background-color: aquamarine;
+}
+
+
+.scene {
+  display: block;
+  font-size: clamp(60px, 12vw, 150px);
+  padding-top: 10px;
+  padding-left: 60px;
+
+
+  transform: scaleY(2.5) ScaleX(1.1);
+  color: #e0b275ff;
+  text-shadow: -7px 0px 0px #fff0c3;
+}
+
+
+.test {
+  padding-top: 0px;
+  padding-left: 40px;
+  margin-top: -30px;
+  color: #b77111;
+  font-size: clamp(20px, 2vw, 50px);
+}
+
+
+.buttons {
+  display: flex;
+  width: 50vw;
+  gap: 10px;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-left: 40px;
+}
