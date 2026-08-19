@@ -1,7 +1,7 @@
 .mainnav {
   background-color: #ffff;
   width: 100vw;
-  height: 6vw;
+  height: 75px;
 }
 
 
@@ -98,4 +98,15 @@ nav {
   flex-direction: column;
   margin-top: 30px;
   margin-left: 40px;
+  align-items: center;
+}
+
+.startbtn {
+  border-radius: 5px;
+  border: 1px solid #b77111;
+}
+
+.aboutbtn {
+  border-radius: 5px;
+  border: 1px solid #b77111;
 }
