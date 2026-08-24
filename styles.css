@@ -4,7 +4,7 @@
   height: 75px;
 }
 
-
+/* add linear-gradient(to top, white, transparent) after i figure out how i want the homepage to look*/
 body {
   background-image: linear-gradient(to right, #fef8e6ff, transparent), url(https://i.pinimg.com/236x/4e/df/14/4edf14c48c80a555bc4566a681965121.jpg);
   display: flex;
@@ -14,6 +14,9 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
 
 nav {
   display: flex;
@@ -28,7 +31,9 @@ nav {
   background-color: white;
   background: linear-gradient(to right, white 55%, transparent 100%);
   padding-bottom: 1%;
-  margin: 10px 500px 0px 10px;
+  margin-top: 10px;
+  margin-right: 500px;
+  margin-left: 10px;
   padding-top: 10px;
 }
 
@@ -43,19 +48,24 @@ nav {
   padding: 10px 50px;
   list-style: none;
   display: flex;
-  gap: 40px;
+  gap: 50px;
 }
 
 
 .Home {
   text-decoration: none;
   color:#b77111;
+  padding-left: 10px;
+  font-size: 20px;
+  text-align: right;
 }
 
 
 .AboutUs {
   text-decoration: none;
   color:#b77111;
+  font-size: 20px;
+  padding: 0px;
 }
 
 
@@ -66,6 +76,57 @@ nav {
 
 .AboutUs:hover {
   background-color: aquamarine;
+}
+
+.DROPDOWN {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  float: right;
+}
+
+.DROPDOWN .Learn {
+  text-decoration: none;
+  color:#b77111;
+  padding: 0;
+  font-size: 20px;
+  text-align: right;
+  font-size: none;
+  border: none;
+  outline: none;
+  background-color: inherit;
+}
+
+.Learn {
+  background-color: teal;
+  color: white;
+  padding: 0px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.LEARNdropdown {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.LEARNdropdown a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.LEARNdropdown a:hover {
+  background-color: #f1f1f1;
+}
+
+.DROPDOWN:hover .LEARNdropdown {
+  display: block;
 }
 
 
@@ -93,20 +154,39 @@ nav {
 
 .buttons {
   display: flex;
-  width: 50vw;
+  width: 100%;
+  max-width: 600px;
   gap: 10px;
   flex-direction: column;
-  margin-top: 30px;
-  margin-left: 40px;
+  margin: 0;
   align-items: center;
+
 }
 
 .startbtn {
+  white-space: nowrap;
   border-radius: 5px;
   border: 1px solid #b77111;
+  background: radial-gradient(white, #fef8e6ff);
+  font-style: normal;
+  color: #b77111;
+  font-size: 25px;
+  padding-left: 190px;
+  padding-right: 190px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .aboutbtn {
+  white-space: nowrap;
+  display: flex;
   border-radius: 5px;
   border: 1px solid #b77111;
+  background: radial-gradient(white, #fef8e6ff);
+  color: #b77111;
+  font-size: 25px;
+  padding-left: 205px;
+  padding-right: 205px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
