@@ -48,14 +48,14 @@ nav {
   padding: 10px 50px;
   list-style: none;
   display: flex;
-  gap: 40px;
+  gap: 50px;
 }
 
 
 .Home {
   text-decoration: none;
   color:#b77111;
-  padding: 17px;
+  padding-left: 10px;
   font-size: 20px;
   text-align: right;
 }
@@ -65,7 +65,7 @@ nav {
   text-decoration: none;
   color:#b77111;
   font-size: 20px;
-  padding: 17px;
+  padding: 0px;
 }
 
 
@@ -79,15 +79,16 @@ nav {
 }
 
 .DROPDOWN {
+  position: relative;
+  display: inline-block;
   text-decoration: none;
   float: right;
-  overflow: hidden;
 }
 
 .DROPDOWN .Learn {
   text-decoration: none;
   color:#b77111;
-  padding: 17px;
+  padding: 0;
   font-size: 20px;
   text-align: right;
   font-size: none;
@@ -96,8 +97,36 @@ nav {
   background-color: inherit;
 }
 
-.DROPDOWN:hover {
-  
+.Learn {
+  background-color: teal;
+  color: white;
+  padding: 0px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.LEARNdropdown {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.LEARNdropdown a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.LEARNdropdown a:hover {
+  background-color: #f1f1f1;
+}
+
+.DROPDOWN:hover .LEARNdropdown {
+  display: block;
 }
 
 
@@ -125,29 +154,39 @@ nav {
 
 .buttons {
   display: flex;
-  width: 50vw;
+  width: 100%;
+  max-width: 600px;
   gap: 10px;
   flex-direction: column;
-  margin-top: 30px;
-  margin-left: 40px;
+  margin: 0;
   align-items: center;
 
 }
 
 .startbtn {
+  white-space: nowrap;
   border-radius: 5px;
   border: 1px solid #b77111;
   background: radial-gradient(white, #fef8e6ff);
   font-style: normal;
   color: #b77111;
   font-size: 25px;
-  padding: 5px, 190px;
+  padding-left: 190px;
+  padding-right: 190px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .aboutbtn {
+  white-space: nowrap;
+  display: flex;
   border-radius: 5px;
   border: 1px solid #b77111;
   background: radial-gradient(white, #fef8e6ff);
   color: #b77111;
   font-size: 25px;
+  padding-left: 205px;
+  padding-right: 205px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
