@@ -31,7 +31,9 @@ nav {
   background-color: white;
   background: linear-gradient(to right, white 55%, transparent 100%);
   padding-bottom: 1%;
-  margin: 10px 500px 0px 10px;
+  margin-top: 10px;
+  margin-right: 500px;
+  margin-left: 10px;
   padding-top: 10px;
 }
 
@@ -53,12 +55,17 @@ nav {
 .Home {
   text-decoration: none;
   color:#b77111;
+  padding: 17px;
+  font-size: 20px;
+  text-align: right;
 }
 
 
 .AboutUs {
   text-decoration: none;
   color:#b77111;
+  font-size: 20px;
+  padding: 17px;
 }
 
 
@@ -69,6 +76,28 @@ nav {
 
 .AboutUs:hover {
   background-color: aquamarine;
+}
+
+.DROPDOWN {
+  text-decoration: none;
+  float: right;
+  overflow: hidden;
+}
+
+.DROPDOWN .Learn {
+  text-decoration: none;
+  color:#b77111;
+  padding: 17px;
+  font-size: 20px;
+  text-align: right;
+  font-size: none;
+  border: none;
+  outline: none;
+  background-color: inherit;
+}
+
+.DROPDOWN:hover {
+  
 }
 
 
