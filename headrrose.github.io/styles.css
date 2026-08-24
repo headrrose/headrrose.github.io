@@ -48,7 +48,7 @@ nav {
   padding: 10px 50px;
   list-style: none;
   display: flex;
-  gap: 50px;
+  gap: 40px;
 }
 
 
@@ -175,6 +175,18 @@ nav {
   padding-right: 190px;
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+.startbtn:hover {
+  border: 1px solid #b77222;
+  background: radial-gradient(rgb(250, 246, 246), rgb(244, 238, 217));
+  color: #684718;
+}
+
+.aboutbtn:hover {
+  border: 1px solid #b77222;
+  background: radial-gradient(rgb(250, 246, 246), rgb(244, 238, 217));
+  color: #684718;
 }
 
 .aboutbtn {
