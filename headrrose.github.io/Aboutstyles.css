@@ -66,19 +66,18 @@ nav {
 
 
 .Home:hover {
-  background-color: aquamarine;
+  text-decoration:underline;
 }
 
 
 .AboutUs:hover {
-  background-color: aquamarine;
+  text-decoration:underline;
 }
 
 .DROPDOWN {
   position: relative;
   display: inline-block;
   text-decoration: none;
-  float: right;
 }
 
 .DROPDOWN .Learn {
@@ -90,15 +89,17 @@ nav {
   font-size: none;
   border: none;
   outline: none;
-  background-color: inherit;
 }
 
 .Learn {
-  background-color: teal;
   color: white;
   padding: 0px;
   text-decoration: none;
   display: inline-block;
+}
+
+.Learn:hover {
+  text-decoration:underline;
 }
 
 .LEARNdropdown {

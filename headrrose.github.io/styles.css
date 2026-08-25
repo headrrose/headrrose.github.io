@@ -8,8 +8,6 @@
 body {
   background-image: linear-gradient(to right, #fef8e6ff, transparent), url(https://i.pinimg.com/236x/4e/df/14/4edf14c48c80a555bc4566a681965121.jpg);
   display: flex;
-
-
   padding: 0px;
   margin: 0;
 }
@@ -21,8 +19,6 @@ a {
 nav {
   display: flex;
   list-style: none;
-
-
 }
 
 
@@ -70,19 +66,18 @@ nav {
 
 
 .Home:hover {
-  background-color: aquamarine;
+  text-decoration: underline;
 }
 
 
 .AboutUs:hover {
-  background-color: aquamarine;
+  text-decoration: underline;
 }
 
 .DROPDOWN {
   position: relative;
   display: inline-block;
   text-decoration: none;
-  float: right;
 }
 
 .DROPDOWN .Learn {
@@ -94,15 +89,17 @@ nav {
   font-size: none;
   border: none;
   outline: none;
-  background-color: inherit;
 }
 
 .Learn {
-  background-color: teal;
   color: white;
   padding: 0px;
   text-decoration: none;
   display: inline-block;
+}
+
+.Learn:hover {
+  text-decoration: underline;  
 }
 
 .LEARNdropdown {
@@ -131,12 +128,12 @@ nav {
 
 
 .scene {
+  white-space: pre-wrap;
   display: block;
   font-size: clamp(60px, 12vw, 150px);
   padding-top: 10px;
   padding-left: 60px;
-
-
+  white-space: nowrap;
   transform: scaleY(2.5) ScaleX(1.1);
   color: #e0b275ff;
   text-shadow: -7px 0px 0px #fff0c3;
@@ -181,12 +178,14 @@ nav {
   border: 1px solid #b77222;
   background: radial-gradient(rgb(250, 246, 246), rgb(244, 238, 217));
   color: #684718;
+  text-decoration:underline;
 }
 
 .aboutbtn:hover {
   border: 1px solid #b77222;
   background: radial-gradient(rgb(250, 246, 246), rgb(244, 238, 217));
   color: #684718;
+  text-decoration:underline;  
 }
 
 .aboutbtn {
