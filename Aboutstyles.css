@@ -26,7 +26,9 @@ nav {
   background-color: white;
   background: linear-gradient(to right, white 55%, transparent 100%);
   padding-bottom: 1%;
-  margin: 10px 500px 0px 10px;
+  margin-top: 10px;
+  margin-right: 500px;
+  margin-left: 10px;
   padding-top: 10px;
 }
 
@@ -48,20 +50,78 @@ nav {
 .Home {
   text-decoration: none;
   color:#b77111;
+  padding-left: 10px;
+  font-size: 20px;
+  text-align: right;
 }
+
 
 
 .AboutUs {
   text-decoration: none;
   color:#b77111;
+  font-size: 20px;
+  padding: 0px;
 }
 
 
 .Home:hover {
-  background-color: aquamarine;
+  text-decoration:underline;
 }
 
 
 .AboutUs:hover {
-  background-color: aquamarine;
+  text-decoration:underline;
+}
+
+.DROPDOWN {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.DROPDOWN .Learn {
+  text-decoration: none;
+  color:#b77111;
+  padding: 0;
+  font-size: 20px;
+  text-align: right;
+  font-size: none;
+  border: none;
+  outline: none;
+}
+
+.Learn {
+  color: white;
+  padding: 0px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.Learn:hover {
+  text-decoration:underline;
+}
+
+.LEARNdropdown {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.LEARNdropdown a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.LEARNdropdown a:hover {
+  background-color: #f1f1f1;
+}
+
+.DROPDOWN:hover .LEARNdropdown {
+  display: block;
 }
