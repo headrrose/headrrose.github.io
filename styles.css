@@ -107,7 +107,7 @@ nav {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(black);
   z-index: 1;
 }
 
@@ -146,6 +146,8 @@ nav {
   margin-top: -30px;
   color: #b77111;
   font-size: clamp(20px, 2vw, 50px);
+  font-weight: 1000;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 
@@ -174,18 +176,33 @@ nav {
   padding-bottom: 5px;
 }
 
+
 .startbtn:hover {
+  scale: 1.03;
   border: 1px solid #b77222;
   background: radial-gradient(rgb(250, 246, 246), rgb(244, 238, 217));
   color: #684718;
-  text-decoration:underline;
+}
+
+.startbtn:active {
+  scale: 0.97;
+  border: 1px solid #b77222;
+  background: radial-gradient(rgb(250, 246, 246), rgb(244, 238, 217));
+  color: #684718;
 }
 
 .aboutbtn:hover {
+  scale: 1.03;
   border: 1px solid #b77222;
   background: radial-gradient(rgb(250, 246, 246), rgb(244, 238, 217));
   color: #684718;
-  text-decoration:underline;  
+}
+
+.aboutbtn:active {
+  scale: 0.97;
+  border: 1px solid #b77222;
+  background: radial-gradient(rgb(250, 246, 246), rgb(244, 238, 217));
+  color: #684718;
 }
 
 .aboutbtn {

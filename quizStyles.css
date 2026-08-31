@@ -1,0 +1,220 @@
+.mainnav {
+  background-color: #ffff;
+  width: 100vw;
+  height: 75px;
+}
+
+/* add linear-gradient(to top, white, transparent) after i figure out how i want the homepage to look*/
+body {
+  background-image: linear-gradient(to right, #fef8e6ff, transparent), url(https://i.pinimg.com/236x/4e/df/14/4edf14c48c80a555bc4566a681965121.jpg);
+  display: flex;
+  padding: 0px;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  list-style: none;
+}
+
+
+.Hero-Section {
+  position: relative;
+  background-color: white;
+  background: linear-gradient(to right, white 55%, transparent 100%);
+  padding-bottom: 1%;
+  margin-top: 10px;
+  margin-right: 500px;
+  margin-left: 10px;
+  padding-top: 10px;
+}
+
+
+.navbar {
+  display:flex;
+}
+
+
+.navitems {
+  justify-content: flex-end;
+  padding: 10px 50px;
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+
+.Home {
+  text-decoration: none;
+  color:#b77111;
+  padding-left: 10px;
+  font-size: 20px;
+  text-align: right;
+}
+
+
+.AboutUs {
+  text-decoration: none;
+  color:#b77111;
+  font-size: 20px;
+  padding: 0px;
+}
+
+
+.Home:hover {
+  text-decoration: underline;
+}
+
+
+.AboutUs:hover {
+  text-decoration: underline;
+}
+
+.DROPDOWN {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.DROPDOWN .Learn {
+  text-decoration: none;
+  color:#b77111;
+  padding: 0;
+  font-size: 20px;
+  text-align: right;
+  font-size: none;
+  border: none;
+  outline: none;
+}
+
+.Learn {
+  color: white;
+  padding: 0px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.Learn:hover {
+  text-decoration: underline;  
+}
+
+.LEARNdropdown {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(black);
+  z-index: 1;
+}
+
+.LEARNdropdown a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.LEARNdropdown a:hover {
+  background-color: #f1f1f1;
+}
+
+.DROPDOWN:hover .LEARNdropdown {
+  display: block;
+}
+
+
+.scene {
+  white-space: pre-wrap;
+  display: block;
+  font-size: clamp(60px, 12vw, 150px);
+  padding-top: 10px;
+  padding-left: 60px;
+  white-space: nowrap;
+  transform: scaleY(2.5) ScaleX(1.1);
+  color: #e0b275ff;
+  text-shadow: -7px 0px 0px #fff0c3;
+}
+
+
+.test {
+  padding-top: 0px;
+  padding-left: 40px;
+  margin-top: -30px;
+  color: #b77111;
+  font-size: clamp(20px, 2vw, 50px);
+  font-weight: 1000;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.buttons {
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  gap: 10px;
+  flex-direction: column;
+  margin: 0;
+  align-items: center;
+
+}
+
+.startbtn {
+  white-space: nowrap;
+  border-radius: 5px;
+  border: 1px solid #b77111;
+  background: radial-gradient(white, #fef8e6ff);
+  font-style: normal;
+  color: #b77111;
+  font-size: 25px;
+  padding-left: 190px;
+  padding-right: 190px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+.startbtn:hover {
+  scale: 1.03;
+  border: 1px solid #b77222;
+  background: radial-gradient(rgb(250, 246, 246), rgb(244, 238, 217));
+  color: #684718;
+}
+
+.startbtn:active {
+  scale: 0.97;
+  border: 1px solid #b77222;
+  background: radial-gradient(rgb(250, 246, 246), rgb(244, 238, 217));
+  color: #684718;
+}
+
+.aboutbtn:hover {
+  scale: 1.03;
+  border: 1px solid #b77222;
+  background: radial-gradient(rgb(250, 246, 246), rgb(244, 238, 217));
+  color: #684718;
+}
+
+.aboutbtn:active {
+  scale: 0.97;
+  border: 1px solid #b77222;
+  background: radial-gradient(rgb(250, 246, 246), rgb(244, 238, 217));
+  color: #684718;
+}
+
+.aboutbtn {
+  white-space: nowrap;
+  display: flex;
+  border-radius: 5px;
+  border: 1px solid #b77111;
+  background: radial-gradient(white, #fef8e6ff);
+  color: #b77111;
+  font-size: 25px;
+  padding-left: 205px;
+  padding-right: 205px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
