@@ -38,6 +38,7 @@ body {
 
 .squareP {
   margin: -40px 20px;
+  color: #88560f;
 }
 
 nav {
@@ -62,9 +63,22 @@ nav {
 }
 
 .startquiz {
-  background-color: rgb(233, 233, 233);
+  margin: 7px;
+  background-color: rgb(255, 255, 219);
   border-radius: 1%;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
+  color:#b77111;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.startquiz:hover {
+  background-color: #b77111;
+  color: white;
+  border-radius: 1%;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 .navitems {
