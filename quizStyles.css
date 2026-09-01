@@ -6,7 +6,7 @@
 
 /* add linear-gradient(to top, white, transparent) after i figure out how i want the homepage to look*/
 body {
-  background-image: linear-gradient(to right, #fef8e6ff, transparent), url(https://i.pinimg.com/236x/4e/df/14/4edf14c48c80a555bc4566a681965121.jpg);
+  background-image: linear-gradient(to right, #fef8e6ff 5%, transparent 30%), url(Yellow-bg.jpe);
   display: flex;
   padding: 0px;
   margin: 0;
@@ -51,6 +51,18 @@ nav {
   font-size: 20px;
   padding: 0px;
 }
+
+.Help {
+  text-decoration: none;
+  color:#b77111;
+  font-size: 20px;
+  padding: 0px;
+}
+
+.Help:hover {
+  text-decoration: underline;
+}
+
 
 
 .Home:hover {

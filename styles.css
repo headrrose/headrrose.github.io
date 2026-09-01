@@ -1,14 +1,15 @@
+
 .mainnav {
   background-color: #ffff;
   width: 100vw;
-  height: 75px;
+  height: 4.688rem;
 }
 
 /* add linear-gradient(to top, white, transparent) after i figure out how i want the homepage to look*/
 body {
   background-image: linear-gradient(to right, #fef8e6ff, transparent), url(https://i.pinimg.com/236x/4e/df/14/4edf14c48c80a555bc4566a681965121.jpg);
   display: flex;
-  padding: 0px;
+  padding: 0;
   margin: 0;
 }
 
@@ -64,6 +65,16 @@ nav {
   padding: 0px;
 }
 
+.Help {
+  text-decoration: none;
+  color:#b77111;
+  font-size: 20px;
+  padding: 0px;
+}
+
+.Help:hover {
+  text-decoration: underline;
+}
 
 .Home:hover {
   text-decoration: underline;
@@ -108,7 +119,6 @@ nav {
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(black);
-  z-index: 1;
 }
 
 .LEARNdropdown a {
