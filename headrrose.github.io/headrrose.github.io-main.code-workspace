@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"name": "headrrose.github.io-main",
+			"path": "../../../headrrose.github.io-main"
+		},
+		{
+			"name": "Dev",
+			"path": "../../../Dev"
+		},
+		{
+			"name": "flame",
+			"path": "../../flame"
+		},
+		{
+			"name": "MY FIRST WEBSITE",
+			"path": "../../MY FIRST WEBSITE"
+		},
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "headrrose.github.io-main"
+	}
+}

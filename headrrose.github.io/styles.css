@@ -1,14 +1,15 @@
+
 .mainnav {
   background-color: #ffff;
   width: 100vw;
-  height: 75px;
+  height: 4.688rem;
 }
 
 /* add linear-gradient(to top, white, transparent) after i figure out how i want the homepage to look*/
 body {
   background-image: linear-gradient(to right, #fef8e6ff, transparent), url(https://i.pinimg.com/236x/4e/df/14/4edf14c48c80a555bc4566a681965121.jpg);
   display: flex;
-  padding: 0px;
+  padding: 0;
   margin: 0;
 }
 
@@ -64,6 +65,16 @@ nav {
   padding: 0px;
 }
 
+.Help {
+  text-decoration: none;
+  color:#b77111;
+  font-size: 20px;
+  padding: 0px;
+}
+
+.Help:hover {
+  text-decoration: underline;
+}
 
 .Home:hover {
   text-decoration: underline;
@@ -107,8 +118,7 @@ nav {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  box-shadow: 0px 8px 16px 0px rgba(black);
 }
 
 .LEARNdropdown a {
@@ -146,6 +156,8 @@ nav {
   margin-top: -30px;
   color: #b77111;
   font-size: clamp(20px, 2vw, 50px);
+  font-weight: 1000;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 
@@ -174,18 +186,33 @@ nav {
   padding-bottom: 5px;
 }
 
+
 .startbtn:hover {
+  scale: 1.03;
   border: 1px solid #b77222;
   background: radial-gradient(rgb(250, 246, 246), rgb(244, 238, 217));
   color: #684718;
-  text-decoration:underline;
+}
+
+.startbtn:active {
+  scale: 0.97;
+  border: 1px solid #b77222;
+  background: radial-gradient(rgb(250, 246, 246), rgb(244, 238, 217));
+  color: #684718;
 }
 
 .aboutbtn:hover {
+  scale: 1.03;
   border: 1px solid #b77222;
   background: radial-gradient(rgb(250, 246, 246), rgb(244, 238, 217));
   color: #684718;
-  text-decoration:underline;  
+}
+
+.aboutbtn:active {
+  scale: 0.97;
+  border: 1px solid #b77222;
+  background: radial-gradient(rgb(250, 246, 246), rgb(244, 238, 217));
+  color: #684718;
 }
 
 .aboutbtn {
