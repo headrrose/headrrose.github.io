@@ -10,6 +10,7 @@ body {
   display: flex;
   padding: 0px;
   margin: 0;
+  overflow-x: hidden;
 }
 
 a {
@@ -126,3 +127,34 @@ nav {
   display: block;
 }
 
+.question-number {
+  display: inline-block;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 10px;
+  color: #b77111; 
+}
+
+.question-box {
+  margin: 0 auto 30px 20px;
+  margin-right: 5%;
+  padding: 20px;
+  height: 300px;
+  background: #ffff;
+  box-shadow: -7px 6px 0px #b77111; 
+}
+
+.options button {
+  margin: 0px 20px;
+  cursor: pointer;
+}
+
+#answer1 {
+  display: inline-block;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 10px;
+  color: #b77111; 
+}

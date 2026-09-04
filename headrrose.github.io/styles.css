@@ -11,6 +11,7 @@ body {
   display: flex;
   padding: 0;
   margin: 0;
+  overflow: hidden;
 }
 
 a {
@@ -74,6 +75,7 @@ nav {
 
 .Help:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .Home:hover {
@@ -184,6 +186,8 @@ nav {
   padding-right: 190px;
   padding-top: 5px;
   padding-bottom: 5px;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 
@@ -192,6 +196,8 @@ nav {
   border: 1px solid #b77222;
   background: radial-gradient(rgb(250, 246, 246), rgb(244, 238, 217));
   color: #684718;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 .startbtn:active {
@@ -206,6 +212,8 @@ nav {
   border: 1px solid #b77222;
   background: radial-gradient(rgb(250, 246, 246), rgb(244, 238, 217));
   color: #684718;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 .aboutbtn:active {
@@ -227,4 +235,6 @@ nav {
   padding-right: 205px;
   padding-top: 5px;
   padding-bottom: 5px;
+  transition: 0.3s;
+  cursor: pointer;
 }
