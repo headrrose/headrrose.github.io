@@ -139,8 +139,7 @@ nav {
 .question-box {
   margin: 0 auto 30px 20px;
   margin-right: 5%;
-  padding: 20px;
-  height: 300px;
+  height: 200px;
   background: #ffff;
   box-shadow: -7px 6px 0px #b77111; 
   align-content: center;
@@ -152,8 +151,15 @@ nav {
   text-align: center;
 }
 
+.options {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+  margin: 0 auto;
+}
+
 .options button {
-  transform: scaleX(1);
+  transform: scale(1);
   margin: 0px 20px;
   cursor: pointer;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -164,7 +170,8 @@ nav {
   color: #b77111;
   transition: 0.3s;
   cursor: pointer;
-
+  padding: 10px;
+  width: 90%;
 }
 
 .options button:hover {
@@ -178,7 +185,7 @@ nav {
 }
 
 .options button:active {
-  transform: scaleX(2.2);
+  transform: scaleY(1.5);
   font-size: 0.5rem;
   border: 1px solid #b77222;
   background: radial-gradient(rgb(250, 246, 246), rgb(244, 238, 217));
