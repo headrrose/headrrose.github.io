@@ -12,7 +12,7 @@ body {
   display: flex;
   padding: 0;
   margin: 0;
-  overflow: hidden;
+  overflow-x: hidden;
   transition: 0.3s;
 }
 
@@ -167,11 +167,12 @@ nav {
 
 .buttons {
   display: flex;
-  width: 100%;
+  flex: 1 1 auto;
+  width: 90%;
   max-width: 600px;
   gap: 10px;
   flex-direction: column;
-  margin: 0;
+  margin-left: 0.5%;
   align-items: center;
 
 }
