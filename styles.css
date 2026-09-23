@@ -7,11 +7,13 @@
 
 /* add linear-gradient(to top, white, transparent) after i figure out how i want the homepage to look*/
 body {
+  background-color: #684718;
   background-image: linear-gradient(to right, #fef8e6ff, transparent), url(https://i.pinimg.com/236x/4e/df/14/4edf14c48c80a555bc4566a681965121.jpg);
   display: flex;
   padding: 0;
   margin: 0;
   overflow: hidden;
+  transition: 0.3s;
 }
 
 a {
@@ -192,7 +194,7 @@ nav {
 
 
 .startbtn:hover {
-  scale: 1.03;
+  transform: scaleY(1.2);
   border: 1px solid #b77222;
   background: radial-gradient(rgb(250, 246, 246), rgb(244, 238, 217));
   color: #684718;
@@ -201,14 +203,14 @@ nav {
 }
 
 .startbtn:active {
-  scale: 0.97;
+  transform: scale(0.9);
   border: 1px solid #b77222;
   background: radial-gradient(rgb(250, 246, 246), rgb(244, 238, 217));
   color: #684718;
 }
 
 .aboutbtn:hover {
-  scale: 1.03;
+  transform: scaleY(1.2);
   border: 1px solid #b77222;
   background: radial-gradient(rgb(250, 246, 246), rgb(244, 238, 217));
   color: #684718;
@@ -217,7 +219,7 @@ nav {
 }
 
 .aboutbtn:active {
-  scale: 0.97;
+  transform: scale(0.9);
   border: 1px solid #b77222;
   background: radial-gradient(rgb(250, 246, 246), rgb(244, 238, 217));
   color: #684718;
