@@ -1,243 +1,51 @@
-
-.mainnav {
-  background-color: #ffff;
-  width: 100vw;
-  height: 4.688rem;
-}
-
-/* add linear-gradient(to top, white, transparent) after i figure out how i want the homepage to look*/
-body {
-  background-color: #684718;
-  background-image: linear-gradient(to right, #fef8e6ff, transparent), url(https://i.pinimg.com/236x/4e/df/14/4edf14c48c80a555bc4566a681965121.jpg);
+/* Dark blurred background covering the entire screen */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
   display: flex;
-  padding: 0;
-  margin: 0;
-  overflow-x: hidden;
-  transition: 0.3s;
-}
-
-a {
-  text-decoration: none;
-}
-
-nav {
-  display: flex;
-  list-style: none;
-}
-
-
-.Hero-Section {
-  position: relative;
-  background-color: white;
-  background: linear-gradient(to right, white 55%, transparent 100%);
-  padding-bottom: 1%;
-  margin-top: 10px;
-  margin-right: 500px;
-  margin-left: 10px;
-  padding-top: 10px;
-}
-
-
-.navbar {
-  display:flex;
-}
-
-
-.navitems {
-  justify-content: flex-end;
-  padding: 10px 50px;
-  list-style: none;
-  display: flex;
-  gap: 40px;
-}
-
-
-.Home {
-  text-decoration: none;
-  color:#b77111;
-  padding-left: 10px;
-  font-size: 20px;
-  text-align: right;
-}
-
-
-.AboutUs {
-  text-decoration: none;
-  color:#b77111;
-  font-size: 20px;
-  padding: 0px;
-}
-
-.Help {
-  text-decoration: none;
-  color:#b77111;
-  font-size: 20px;
-  padding: 0px;
-}
-
-.Help:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.Home:hover {
-  text-decoration: underline;
-}
-
-
-.AboutUs:hover {
-  text-decoration: underline;
-}
-
-.DROPDOWN {
-  position: relative;
-  display: inline-block;
-  text-decoration: none;
-}
-
-.DROPDOWN .Learn {
-  text-decoration: none;
-  color:#b77111;
-  padding: 0;
-  font-size: 20px;
-  text-align: right;
-  font-size: none;
-  border: none;
-  outline: none;
-}
-
-.Learn {
-  color: white;
-  padding: 0px;
-  text-decoration: none;
-  display: inline-block;
-}
-
-.Learn:hover {
-  text-decoration: underline;  
-}
-
-.LEARNdropdown {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(black);
-}
-
-.LEARNdropdown a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.LEARNdropdown a:hover {
-  background-color: #f1f1f1;
-}
-
-.DROPDOWN:hover .LEARNdropdown {
-  display: block;
-}
-
-
-.scene {
-  white-space: pre-wrap;
-  display: block;
-  font-size: clamp(60px, 12vw, 150px);
-  padding-top: 10px;
-  padding-left: 60px;
-  white-space: nowrap;
-  transform: scaleY(2.5) ScaleX(1.1);
-  color: #e0b275ff;
-  text-shadow: -7px 0px 0px #fff0c3;
-}
-
-
-.test {
-  padding-top: 0px;
-  padding-left: 40px;
-  margin-top: -30px;
-  color: #b77111;
-  font-size: clamp(20px, 2vw, 50px);
-  font-weight: 1000;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-
-.buttons {
-  display: flex;
-  flex: 1 1 auto;
-  width: 90%;
-  max-width: 600px;
-  gap: 10px;
-  flex-direction: column;
-  margin-left: 0.5%;
+  justify-content: center;
   align-items: center;
-
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 9999;
 }
 
-.startbtn {
-  white-space: nowrap;
+/* The actual pop-up box */
+.popup-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  transform: scale(0.8);
+  transition: transform 0.3s ease;
+}
+
+/* This utility class triggers the pop-up */
+.popup-overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.popup-overlay.show .popup-box {
+  transform: scale(1);
+}
+
+/* Simple button styling */
+.close-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
   border-radius: 5px;
-  border: 1px solid #b77111;
-  background: radial-gradient(white, #fef8e6ff);
-  font-style: normal;
-  color: #b77111;
-  font-size: 25px;
-  padding-left: 190px;
-  padding-right: 190px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  transition: 0.3s;
   cursor: pointer;
-}
-
-
-.startbtn:hover {
-  transform: scaleY(1.2);
-  border: 1px solid #b77222;
-  background: radial-gradient(rgb(250, 246, 246), rgb(244, 238, 217));
-  color: #684718;
-  transition: 0.3s;
-  cursor: pointer;
-}
-
-.startbtn:active {
-  transform: scale(0.9);
-  border: 1px solid #b77222;
-  background: radial-gradient(rgb(250, 246, 246), rgb(244, 238, 217));
-  color: #684718;
-}
-
-.aboutbtn:hover {
-  transform: scaleY(1.2);
-  border: 1px solid #b77222;
-  background: radial-gradient(rgb(250, 246, 246), rgb(244, 238, 217));
-  color: #684718;
-  transition: 0.3s;
-  cursor: pointer;
-}
-
-.aboutbtn:active {
-  transform: scale(0.9);
-  border: 1px solid #b77222;
-  background: radial-gradient(rgb(250, 246, 246), rgb(244, 238, 217));
-  color: #684718;
-}
-
-.aboutbtn {
-  white-space: nowrap;
-  display: flex;
-  border-radius: 5px;
-  border: 1px solid #b77111;
-  background: radial-gradient(white, #fef8e6ff);
-  color: #b77111;
-  font-size: 25px;
-  padding-left: 205px;
-  padding-right: 205px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  transition: 0.3s;
-  cursor: pointer;
+  margin-top: 15px;
 }
