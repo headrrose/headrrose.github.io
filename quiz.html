@@ -26,19 +26,21 @@
                 <source src="Kahoot Lobby Music.mp3" type="audio/mpeg">
             </audio>
         </header>
-        <span class="question-number">Question 1 !!</span>
-        <div class="question-box">
-            <h1>What's the first principle of animation?</h1>
-        </div>
-        <div class="options">
-            <button onclick="checkQuestion('incorrect')">
-                Anticipation
-            </button>
-            <button onclick="checkQuestion('correct')">Squash and Stretch</button>
-            <button onclick="checkQuestion('incorrect')">Staging</button>
-            <button onclick="checkQuestion('incorrect')">Ease in, Ease out</button>
-        </div>
-        <p id="answer1"></p>
+        <main class="quiz-section">
+            <span class="question-number">Question 1 !!</span>
+            <div class="question-box">
+                <h1>What's the first principle of animation?</h1>
+            </div>
+            <div class="options" id="options-container">
+                <button id="wrong1">
+                    Anticipation
+                </button>
+                <button id="correct">Squash and Stretch</button>
+                <button id="wrong2">Staging</button>
+                <button id="wrong3">Ease in, Ease out</button>
+            </div>
+            <button id="next-btn" style="display: none;">Next Question →</button>
+        </main>
     <script src="scripts.js"></script>
 </body>
 </html>

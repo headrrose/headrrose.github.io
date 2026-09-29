@@ -6,7 +6,7 @@
 
 /* add linear-gradient(to top, white, transparent) after i figure out how i want the homepage to look*/
 body {
-  background-image: linear-gradient(to right, #fef8e6ff 5%, transparent 30%), url(Yellow-bg.jpe);
+  background-image: linear-gradient(to right, rgb(250, 237, 212) 1%, #fef8e6ff 10%, transparent 90%), url(https://i.pinimg.com/236x/4e/df/14/4edf14c48c80a555bc4566a681965121.jpg);
   display: flex;
   padding: 0px;
   margin: 0;
@@ -153,6 +153,8 @@ nav {
 
 .options {
   display: grid;
+  position: flex;
+  justify-content: center;
   grid-template-columns: repeat(1, 1fr);
   gap: 10px;
   margin: 0 auto;
@@ -163,29 +165,30 @@ nav {
   cursor: pointer;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 1.25rem;
-  border-radius: 10px;
-  border-left: 3px solid #b77111;
   background: radial-gradient(white, #fef8e6ff);
-  color: #b77111;
+  color: #905a0f;
   transition: 0.3s;
   cursor: pointer;
   padding: 10px;
   width: 90%;
 }
 
-.options button:hover {
-  transform: scaleX(0.9);
+.options button:not(:disabled):hover {
   font-size: 2rem;
-  border: 1px solid #b77222;
-  background: radial-gradient(rgb(250, 246, 246), rgb(244, 238, 217));
+  border: 3.5px solid #b77222;
+  background: radial-gradient(rgb(250, 246, 246), rgb(255, 253, 248));
   color: #684718;
   transition: 0.3s;
   cursor: pointer;
 }
 
+.options button:disabled {
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
 .options button:active {
-  transform: scaleY(1.5);
-  font-size: 0.5rem;
+  font-size: 1.25rem;
   border: 1px solid #b77222;
   background: radial-gradient(rgb(250, 246, 246), rgb(244, 238, 217));
   color: #684718;
