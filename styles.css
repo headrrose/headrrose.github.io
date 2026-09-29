@@ -34,6 +34,7 @@ nav {
   margin-right: 500px;
   margin-left: 10px;
   padding-top: 10px;
+  z-index: 2;
 }
 
 
@@ -194,12 +195,13 @@ nav {
 
 #cornerImage1 {
   position:absolute;
-  top: 35px;
-  right: 40rem;
+  top: 45px;
+  right: 37rem;
   width: 200px;
   transform: rotate(-20deg) scale(2);
-  z-index: 2;
-  opacity: linear-gradient(0, 1);
+  z-index: 1;
+  mask-image: linear-gradient(to right, transparent 0.001%, black 100%);
+  filter: invert(10%) sepia(20%) brightness(110%);
 }
 
 .startbtn:hover {
