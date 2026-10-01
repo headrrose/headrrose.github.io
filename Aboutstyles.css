@@ -178,8 +178,10 @@ nav {
   border: none;
   outline: none;
 }
-
+ 
 .Learn {
+  font-family:'Times New Roman', Times, serif;
+  background-color: #ffffff;
   color: white;
   padding: 0px;
   text-decoration: none;
