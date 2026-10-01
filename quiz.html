@@ -4,6 +4,7 @@
         <meta charset = "utf-8">
         <title>Scene it? - Quiz time!</title>
         <link rel="icon" type="image/png" href="Yay.png">
+        <link rel="stylesheet" href="quizStyles.css">
     </head>
     <body>
         <div id="nav-home">
@@ -27,22 +28,16 @@
             </audio>
         </header>
         <main class="quiz-section">
-            <span class="question-number">Question 1 !!</span>
-            <div class="question-box">
-                <h1>What's the first principle of animation?</h1>
+            <span class="question-number" id="question-counter">Question 1 !!</span>
+            <div id="quiz">
+                <div class="question-box">
+                    <h1 id="question"><</h1>
+                </div>
+                <div class="options" id="options-container"></div>
             </div>
-            <div class="options" id="options-container">
-                <button id="wrong1">
-                    Anticipation
-                </button>
-                <button id="correct">Squash and Stretch</button>
-                <button id="wrong2">Staging</button>
-                <button id="wrong3">Ease in, Ease out</button>
-            </div>
-            <button id="next-btn" style="display: none;">Next Question →</button>
+            <button id="next-btn" style="display: none;">Next Question</button>
         </main>
-    <script src="scripts.js"></script>
+    <script src="quizscripts.js"></script>
 </body>
 </html>
-<link rel="stylesheet" href="quizStyles.css">
 
