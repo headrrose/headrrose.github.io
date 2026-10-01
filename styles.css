@@ -177,7 +177,7 @@ nav {
 
 }
 
-.startbtn {
+#startbtn {
   white-space: nowrap;
   border-radius: 5px;
   border: 1px solid #b77111;
@@ -216,7 +216,7 @@ nav {
   filter: invert(10%) sepia(20%) brightness(110%);
 }
 
-.startbtn:hover {
+#startbtn:hover {
   transform: scaleY(1.2);
   border: 1px solid #b77222;
   background: radial-gradient(rgb(250, 246, 246), rgb(244, 238, 217));
@@ -226,14 +226,14 @@ nav {
 }
 
 
-.startbtn:active {
+#startbtn:active {
   transform: scale(0.9);
   border: 1px solid #b77222;
   background: radial-gradient(rgb(250, 246, 246), rgb(244, 238, 217));
   color: #684718;
 }
 
-.aboutbtn:hover {
+#aboutbtn:hover {
   transform: scaleY(1.2);
   border: 1px solid #b77222;
   background: radial-gradient(rgb(250, 246, 246), rgb(244, 238, 217));
@@ -242,14 +242,14 @@ nav {
   cursor: pointer;
 }
 
-.aboutbtn:active {
+#aboutbtn:active {
   transform: scale(0.9);
   border: 1px solid #b77222;
   background: radial-gradient(rgb(250, 246, 246), rgb(244, 238, 217));
   color: #684718;
 }
 
-.aboutbtn {
+#aboutbtn {
   white-space: nowrap;
   display: flex;
   border-radius: 5px;
