@@ -21,9 +21,19 @@ const quizData = [
         answer: "In-betweening"
     },
     {
-        question: "What is the term for the process of drawing each frame individually?",
-        options: ["In-betweening", "Keyframing", "Timing", "Frame-by-frame"],
-        answer: "Frame-by-frame"
+        question: "Who discovered the 12 principles of animation?",
+        options: ["Frank Thomas and Ollie Johnston", "Muri Mytton and Jasper Jacinto", "Reynold Dwight and Connor McMurphy", "A team of unnamed animators"],
+        answer: "Frank Thomas and Ollie Johnston"
+    },
+    {
+        question: "Which principle defines how long an action takes from start to finish?",
+        options: ["Anticipation", "Timing", "Secondary action", "Longitudinal motion"],
+        answer: "Timing"
+    },
+    {
+        question: "What is the term for the exaggeration of movement or expression in animation?",
+        options: ["Exaggeration", "Anticipation", "Follow-through", "Secondary action"],
+        answer: "Exaggeration"
     }
 ]
 
