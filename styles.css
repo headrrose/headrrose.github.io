@@ -2,7 +2,7 @@
 .mainnav {
   background-color: #ffff;
   width: 100vw;
-  height: 4.688rem;
+  height: 4.45rem;
 }
 
 /* add linear-gradient(to top, white, transparent) after i figure out how i want the homepage to look*/
@@ -45,7 +45,7 @@ nav {
 
 .navitems {
   justify-content: flex-end;
-  padding: 10px 50px;
+  padding: 7px 50px;
   list-style: none;
   display: flex;
   gap: 40px;

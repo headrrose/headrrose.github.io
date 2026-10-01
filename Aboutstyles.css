@@ -2,7 +2,7 @@
 .mainnav {
   background-color: #ffff;
   width: 100vw;
-  height: 75px;
+  height: 4.45rem;
 }
 
 
@@ -118,7 +118,7 @@ nav {
 
 .rightnav {
   justify-content: start;
-  padding: 10px 50px;
+  padding: 7px 50px;
   list-style: none;
   display: flex;
   gap: 40px;
