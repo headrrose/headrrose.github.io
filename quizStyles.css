@@ -182,6 +182,17 @@ nav {
   cursor: pointer;
 }
 
+#next-btn {
+  margin: 10px 20px;
+  display: block;
+  padding: 10px 20px;
+  font-size: 1.25rem;
+  background-color: #b77111;
+  color: white;
+  border-color: #7e4e0a 5px solid;
+  cursor: pointer;
+}
+
 .options button:disabled {
   pointer-events: none;
   cursor: not-allowed;

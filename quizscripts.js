@@ -3,7 +3,7 @@ document.addEventListener('click', () =>{
     music.play();
 }, {once: true});
 
-//List of questions
+// List of questions
 const quizData = [
     {
         question: "What's the first principle of animation?",
@@ -27,7 +27,7 @@ const quizData = [
     }
 ]
 
-//Elements
+// Elements
 const correctButton = document.getElementById("correct");
 const quizContainer = document.getElementById('quiz');
 const questionElement = document.getElementById('question');
@@ -35,21 +35,28 @@ const optionsElement = document.getElementById('options-container');
 const nextButton = document.getElementById('next-btn');
 const counterElement = document.getElementById('question-counter');
 
-//Variables
+// Variables
 let currentQuestion = 0;
 let score = 0;
 let selectedOption = null;
 
 function showQuestion () {
+
+    // Increase question number
     counterElement.innerText = `Question ${currentQuestion + 1} !!`;
+
+    // Show question, and assign question using [currentQuestion]
     const question = quizData[currentQuestion]; 
     questionElement.innerText = question.question;
 
+    //If nothing is selected, no action is taken
     optionsElement.innerHTML = '';
     selectedOption = null;
 
+    //Next button is hidden until an option is selected
     nextButton.style.display = 'none';
 
+    // Create buttons for each option
     question.options.forEach(option => {
         const button = document.createElement('button');
         button.innerText = option;
@@ -65,7 +72,8 @@ function selectAnswer(e, optionText) {
 
     // Prevent multiple selections
     if (selectedOption !== null) return;
-
+    
+    // Check if the selected option is correct and update score
     selectedOption = optionText;
     const selectedButton = e.target;
     const correctAnswer = quizData[currentQuestion].answer;
@@ -80,6 +88,8 @@ function selectAnswer(e, optionText) {
         }
     });
 
+    // Highlighting the buttons based on correct or incorrrect selection
+    // + updating correct score
     if (optionText === correctAnswer) {
         score++;
         selectedButton.classList.add('correct');
@@ -94,6 +104,7 @@ function selectAnswer(e, optionText) {
         selectedButton.style.border = '3.5px solid #711515';
     }
 
+    // Displays next button + change text to "Finish Quiz" if it's the last question
     nextButton.style.display = 'block';
     nextButton.innerText = currentQuestion === quizData.length - 1 ? 'Finish Quiz' : 'Next Question';
 }
@@ -110,6 +121,8 @@ function highlightCorrectAnswer(correctAnswer) {
     });
 }
 
+// When next button is clicked, current question increases by 1 + next question is displayed. 
+// If there are no more questions, the results are shown.
 nextButton.addEventListener('click', () => {
     currentQuestion++;
     if (currentQuestion < quizData.length) {
@@ -121,8 +134,10 @@ nextButton.addEventListener('click', () => {
 
 showQuestion();
 
+// Displays final score + restart button
 function showResults() {
     counterElement.innerText = '';
+    nextButton.style.display = 'none';
     quizContainer.innerHTML = `
         <h1>Quiz Completed!</h1>
         <p>Your score: ${score}/${quizData.length}</p>
