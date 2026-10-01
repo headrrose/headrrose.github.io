@@ -138,9 +138,21 @@ showQuestion();
 function showResults() {
     counterElement.innerText = '';
     nextButton.style.display = 'none';
+
+    let customMessage = '';
+    if (score === quizData.length) {
+        customMessage = "Perfect score! You're an expert!";
+    } else if (score >= quizData.length / 2) {
+        customMessage = "Good job! You have a solid understanding.";
+    } else {
+        customMessage = "Keep practicing! You'll get better!";
+    }
+
     quizContainer.innerHTML = `
-        <h1>Quiz Completed!</h1>
-        <p>Your score: ${score}/${quizData.length}</p>
-        <button onclick="location.reload()">Restart Quiz</button>
+        <div class="results">
+            <h1 style="text-align: center; color: #c79a52">${customMessage}</h1>
+            <p>Your score: ${score}/${quizData.length}</p>
+            <button onclick="location.reload()">Restart Quiz</button>
+        </div>
     `;
 }

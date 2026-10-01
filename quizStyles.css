@@ -193,6 +193,15 @@ nav {
   cursor: pointer;
 }
 
+#next-btn:hover {
+  color: #b77111;
+  background-color: rgb(255, 254, 251);
+  border-color: #ffffff 5px solid;
+  transform: scale(1.05);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
 .options button:disabled {
   pointer-events: none;
   cursor: not-allowed;
@@ -212,4 +221,12 @@ nav {
   text-align: center;
   padding: 10px;
   color: #b77111; 
+}
+
+.results {
+  background-color: #ffff;
+  padding: 40px;
+  box-shadow: 0 4px 10px rgb(0,0,0,0.05);
+  min-height: 250px;
+  max-width: 600px;
 }
