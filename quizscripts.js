@@ -27,13 +27,28 @@ const quizData = [
     },
     {
         question: "Which principle defines how long an action takes from start to finish?",
-        options: ["Anticipation", "Timing", "Secondary action", "Longitudinal motion"],
+        options: ["Anticipation", "Longitudinal motion", "Secondary action", "Timing"],
         answer: "Timing"
     },
     {
         question: "What is the term for the exaggeration of movement or expression in animation?",
         options: ["Exaggeration", "Anticipation", "Follow-through", "Secondary action"],
         answer: "Exaggeration"
+    },    
+    {
+        question: "A simple 20 second animation can take months to produce",
+        options: ["True", "False"],
+        answer: "True"
+    },    
+    {
+        question: "Mickey Mouse was the first ever frame-by-frame animation",
+        options: ["True", "False",],
+        answer: "False"
+    },    
+    {
+        question: "Which one of these isn't a principle of animation?",
+        options: ["Anticipation", "Follow-through", "Ease-in-Ease-Out", "Preservation"],
+        answer: "Preservation"
     }
 ]
 
@@ -154,6 +169,8 @@ function showResults() {
         customMessage = "Perfect score! You're an expert!";
     } else if (score >= quizData.length / 2) {
         customMessage = "Good job! You have a solid understanding.";
+    } else if (score === 0) {
+        customMessage = "Don't worry, everyone starts somewhere.";
     } else {
         customMessage = "Keep practicing! You'll get better!";
     }
