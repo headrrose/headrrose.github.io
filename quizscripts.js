@@ -168,15 +168,18 @@ function showResults() {
     if (score === quizData.length) {
         customMessage = "Perfect score! You're an expert!";
         imgSrc = "Hapy-James.gif";
+    } else if (score === quizData.length - 1) {
+        customMessage = "Almost perfect! Great job!";
+        imgSrc = "Happy-James.gif";
     } else if (score >= quizData.length / 2) {
         customMessage = "Good job! You have a solid understanding.";
-        imgSrc = "Normal-James.gif";
+        imgSrc = "Relieved-James.gif";
     } else if (score === 0) {
         customMessage = "Don't worry, everyone starts somewhere.";
         imgSrc = "Sad-James.gif";
     } else {
         customMessage = "Keep practicing! You'll get better!";
-        imgSrc = "Sad-James.gif";
+        imgSrc = "Normal-James.gif";
     }
 
     quizContainer.innerHTML = `
