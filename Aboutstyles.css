@@ -1,6 +1,8 @@
 
 .mainnav {
   background-color: #ffff;
+  background-image: linear-gradient(to left,rgb(255, 251, 239) 20%, transparent 90%);
+  border-bottom: 3px solid #d7bb93;
   width: 100vw;
   height: 4.45rem;
 }
@@ -181,7 +183,7 @@ nav {
  
 .Learn {
   font-family:'Times New Roman', Times, serif;
-  background-color: #ffffff;
+  background-color: inherit;
   color: white;
   padding: 0px;
   text-decoration: none;

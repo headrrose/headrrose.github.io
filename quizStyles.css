@@ -1,6 +1,6 @@
 .mainnav {
   background-color: #ffffff;
-  background-image: linear-gradient(to left,#fef8e6ff 20%, transparent 90%);
+  background-image: linear-gradient(to left,rgb(255, 251, 239) 20%, transparent 90%);
   border-bottom: 3px solid #d7bb93;
   width: 100vw;
   height: 4.45rem;
@@ -206,6 +206,33 @@ nav {
   cursor: pointer;
 }
 
+#restart-btn {
+  display: block;
+  margin-right: 4rem;
+  padding: 10px 20px;
+  font-size: 1.25rem;
+  background-color: #b77111;
+  color: white;
+  border-color: #7e4e0a 5px solid;
+  cursor: pointer;
+}
+
+#home-btn {
+  display: block;
+  margin-right: 4rem;
+  padding: 10px 20px;
+  font-size: 1.25rem;
+  background-color: #b77111;
+  color: white;
+  border-color: #7e4e0a 5px solid;
+  cursor: pointer;
+}
+
+#finish-btns {
+  display: flex;
+  margin-top: 20px;
+}
+
 #next-btn:hover {
   color: #b77111;
   background-color: rgb(255, 254, 251);
@@ -214,6 +241,25 @@ nav {
   transition: 0.3s;
   cursor: pointer;
 }
+
+#restart-btn:hover {
+  color: #b77111;
+  background-color: rgb(255, 254, 251);
+  border-color: #ffffff 5px solid;
+  transform: scale(1.05);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#home-btn:hover {
+  color: #b77111;
+  background-color: rgb(255, 254, 251);
+  border-color: #ffffff 5px solid;
+  transform: scale(1.05);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
 
 .options button:disabled {
   pointer-events: none;
@@ -244,4 +290,26 @@ nav {
   max-width: 600px;
   margin: 0 auto;
   border: 5px solid #E2AC8D;
+}
+
+#customMessage {
+  margin: 0 auto;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 2rem;
+  color: #c5801f;
+}
+
+#score {
+  margin: 20px 0px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1rem;
+  color: #9c5317;
+}
+
+#James {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: -20px;
 }

@@ -9,7 +9,7 @@ const quizData = [
         question: "What's the first principle of animation?",
         options: ["Staging", "Anticipation", "Squash and stretch", "Ease in, Ease out"],
         answer: "Squash and stretch",
-    },
+    },    
     {
         question: "Which animation technique was first introduced?",
         options: ["Stop motion", "Frame-by-frame", "Tweening", "Rotoscoping"],
@@ -41,7 +41,7 @@ const quizData = [
         answer: "True"
     },    
     {
-        question: "Mickey Mouse was the first ever frame-by-frame animation",
+        question: "\"Steamboat Willie\" was the first ever animation with synchronized sound",
         options: ["True", "False",],
         answer: "False"
     },    
@@ -167,19 +167,27 @@ function showResults() {
     let customMessage = '';
     if (score === quizData.length) {
         customMessage = "Perfect score! You're an expert!";
+        imgSrc = "Hapy-James.gif";
     } else if (score >= quizData.length / 2) {
         customMessage = "Good job! You have a solid understanding.";
+        imgSrc = "Normal-James.gif";
     } else if (score === 0) {
         customMessage = "Don't worry, everyone starts somewhere.";
+        imgSrc = "Sad-James.gif";
     } else {
         customMessage = "Keep practicing! You'll get better!";
+        imgSrc = "Sad-James.gif";
     }
 
     quizContainer.innerHTML = `
         <div class="results">
-            <h1 style="text-align: center; color: #c79a52">${customMessage}</h1>
-            <p>Your score: ${score}/${quizData.length}</p>
-            <button onclick="location.reload()">Restart Quiz</button>
+            <h1 id="customMessage">${customMessage}</h1>
+            <p id="score">Your score: ${score}/${quizData.length}</p>
+            <div id="finish-btns">
+                <button id="restart-btn" onclick="location.reload()">Restart Quiz</button>
+                <button id="home-btn" onclick="window.location.href='index.html'">Go home</button>
+            </div>
+            <img id="James" src="${imgSrc}" alt="Image of James">
         </div>
     `;
 }
