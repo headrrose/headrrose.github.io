@@ -1,5 +1,7 @@
 .mainnav {
-  background-color: #ffff;
+  background-color: #ffffff;
+  background-image: linear-gradient(to left,#fef8e6ff 20%, transparent 90%);
+  border-bottom: 3px solid #d7bb93;
   width: 100vw;
   height: 4.45rem;
 }
@@ -55,7 +57,7 @@ nav {
 
 .Help {
   text-decoration: none;
-  color:#b77111;
+  color: #b77111;
   font-size: 20px;
   padding: 0px;
 }
@@ -94,7 +96,7 @@ nav {
 
 .Learn {
   font-family:'Times New Roman', Times, serif;
-  background-color: #ffffff;
+  background-color: inherit;
   color: white;
   padding: 0px;
   text-decoration: none;
@@ -138,15 +140,18 @@ nav {
   font-size: 1.5rem;
   text-align: center;
   padding: 10px;
-  color: #b77111; 
+  color: #b77111;
+  margin: 0 auto; 
 }
 
 .question-box {
-  margin: 0 auto 30px 20px;
+  margin: 0 auto;
+  width: 90%;
   margin-right: 5%;
   height: 200px;
   background: #ffff;
-  box-shadow: -7px 6px 0px #b77111; 
+  border-left: 5px solid #b77111;
+  border-bottom: 5px solid #b77111;
   align-content: center;
 }
 
@@ -162,11 +167,11 @@ nav {
   justify-content: center;
   grid-template-columns: repeat(1, 1fr);
   gap: 10px;
-  margin: 0 auto;
+  margin: 30px auto;
 }
 
 .options button {
-  margin: 0px 20px;
+  margin: 0 auto;
   cursor: pointer;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 1.25rem;
@@ -188,8 +193,11 @@ nav {
 }
 
 #next-btn {
-  margin: 10px 20px;
+  justify-content: start;
   display: block;
+  float: right;
+  margin-top: -20px;
+  margin-right: 4rem;
   padding: 10px 20px;
   font-size: 1.25rem;
   background-color: #b77111;
