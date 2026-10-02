@@ -3,6 +3,7 @@ document.addEventListener('click', () =>{
     music.play();
 }, {once: true});
 
+
 // List of questions
 const quizData = [
     {
