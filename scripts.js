@@ -1,31 +1,30 @@
-const music = document.getElementById('background-music');
-document.addEventListener('click', () =>{
-    music.play();
-}, {once: true});
+// Button sounds
+document.addEventListener('DOMContentLoaded', function() {
+    const hoverSound = document.getElementById('hover-sound');
+    const clickSound = document.getElementById('click-sound');
+    const soundLinks = document.querySelectorAll('.sound');
 
-const correctButton = document.getElementById("correct");
+    soundLinks.forEach(link => {
+        link.addEventListener('mouseenter', () => {
+            hoverSound.currentTime = 0;
+            hoverSound.play();
+                console.log('Hover sound played');
+            });
 
-const allButtons = document.querySelectorAll('.options button');
-const nextButton = document.getElementById('next-button');
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            const destination = this.href;
+            clickSound.currentTime = 0;
+            clickSound.play().catch(() => {
 
-allButtons.forEach(button => {
-    button.addEventListener('click', function() {
-        allButtons.forEach(btn => {
-            btn.disabled = true;
-            if (btn !== button) {
-                btn.classList.add("dimmed");
-                btn.style.opacity = "0.8";
+            });
+
+            clickSound.onended = () => {
+                window.location.href = destination;
             }
+        setTimeout(() => {
+            window.location.href = destination;
+         },250);
         });
-
-        if (button === correctButton) {
-            correctButton.style.background = 'green';
-            correctButton.style.color = 'white';
-            correctButton.style.border = '3.5px solid #0c472f';
-        } else {
-            button.style.background = 'red';
-            button.style.color = 'white';
-            button.style.border = '3.5px solid #711515';
-        }
     });
 });
