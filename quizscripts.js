@@ -205,11 +205,11 @@ function showResults() {
         <div class="results">
             <h1 id="customMessage">${customMessage}</h1>
             <p id="score">Your score: ${score}/${quizData.length}</p>
-            <img id="James" src="${imgSrc}" alt="Image of James">
             <div id="finish-btns">
                 <button id="restart-btn" onclick="location.reload()">Restart Quiz</button>
                 <button id="home-btn" onclick="window.location.href='index.html'">Go home</button>
             </div>
+            <img id="James" src="${imgSrc}" alt="Image of James">
         </div>
     `;
 }

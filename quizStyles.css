@@ -233,7 +233,7 @@ nav {
 
 #finish-btns {
   display: flex;
-  margin-top: 40px;
+  margin-top: 20px;
   justify-content: center;
   gap: 25px;
   width: 100%;
