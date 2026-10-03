@@ -168,23 +168,38 @@ function showResults() {
     counterElement.innerText = '';
     nextButton.style.display = 'none';
 
+    music.pause();
+
     let customMessage = '';
+    let resultMusicSrc = '';
+
     if (score === quizData.length) {
         customMessage = "Perfect score! You're an expert!";
         imgSrc = "Hapy-James.gif";
+        resultMusicSrc = "Celebrate.mp3";
     } else if (score === quizData.length - 1) {
         customMessage = "Almost perfect! Great job!";
         imgSrc = "Happy-James.gif";
+        resultMusicSrc = "Celebrate.mp3";
     } else if (score >= quizData.length / 2) {
         customMessage = "Good job! You have a solid understanding.";
         imgSrc = "Relieved-James.gif";
+        resultMusicSrc = "Normal.mp3";
     } else if (score === 0) {
         customMessage = "Don't worry, everyone starts somewhere.";
         imgSrc = "Sad-James.gif";
+        resultMusicSrc = "Fail.mp3";
     } else {
         customMessage = "Keep practicing! You'll get better!";
         imgSrc = "Normal-James.gif";
+        resultMusicSrc = "Normal.mp3";
     }
+
+    music.src = resultMusicSrc;
+    music.load();
+    music.play().catch(error => {
+        console.log("audio autoplay restriction..", error)
+    });
 
     quizContainer.innerHTML = `
         <div class="results">
