@@ -10,7 +10,7 @@ const quizData = [
         question: "What's the first principle of animation?",
         options: ["Staging", "Anticipation", "Squash and stretch", "Ease in, Ease out"],
         answer: "Squash and stretch",
-    },    
+    },   
     {
         question: "Which animation technique was first introduced?",
         options: ["Stop motion", "Frame-by-frame", "Tweening", "Rotoscoping"],
@@ -162,6 +162,9 @@ showQuestion();
 
 // Displays final score + restart button
 function showResults() {
+    //Change background colour to make results pop out
+    document.body.style.background = '#fef8e6ff';
+
     counterElement.innerText = '';
     nextButton.style.display = 'none';
 
@@ -187,11 +190,11 @@ function showResults() {
         <div class="results">
             <h1 id="customMessage">${customMessage}</h1>
             <p id="score">Your score: ${score}/${quizData.length}</p>
+            <img id="James" src="${imgSrc}" alt="Image of James">
             <div id="finish-btns">
                 <button id="restart-btn" onclick="location.reload()">Restart Quiz</button>
                 <button id="home-btn" onclick="window.location.href='index.html'">Go home</button>
             </div>
-            <img id="James" src="${imgSrc}" alt="Image of James">
         </div>
     `;
 }
