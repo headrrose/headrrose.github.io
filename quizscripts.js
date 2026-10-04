@@ -175,23 +175,23 @@ function showResults() {
 
     if (score === quizData.length) {
         customMessage = "Perfect score! You're an expert!";
-        imgSrc = "Hapy-James.gif";
+        imgSrc = "images/Hapy-James.gif";
         resultMusicSrc = "sounds/Celebrate.mp3";
     } else if (score === quizData.length - 1) {
         customMessage = "Almost perfect! Great job!";
-        imgSrc = "Happy-James.gif";
+        imgSrc = "images/Happy-James.gif";
         resultMusicSrc = "sounds/Celebrate.mp3";
     } else if (score >= quizData.length / 2) {
         customMessage = "Good job! You have a solid understanding.";
-        imgSrc = "Relieved-James.gif";
+        imgSrc = "images/Relieved-James.gif";
         resultMusicSrc = "sounds/Normal.mp3";
     } else if (score === 0) {
         customMessage = "Don't worry, everyone starts somewhere.";
-        imgSrc = "Sad-James.gif";
+        imgSrc = "images/Sad-James.gif";
         resultMusicSrc = "sounds/Fail.mp3";
     } else {
         customMessage = "Keep practicing! You'll get better!";
-        imgSrc = "Normal-James.gif";
+        imgSrc = "images/Normal-James.gif";
         resultMusicSrc = "sounds/Normal.mp3";
     }
 
