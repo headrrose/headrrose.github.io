@@ -163,7 +163,7 @@ showQuestion();
 // Displays final score + restart button
 function showResults() {
     //Change background colour to make results pop out
-    document.body.style.background = '#fef8e6ff';
+    document.body.style.backgroundImage = 'radial-gradient(transparent 5%, #fef8e6ff), url(https://i.pinimg.com/236x/4e/df/14/4edf14c48c80a555bc4566a681965121.jpg)';
 
     counterElement.innerText = '';
     nextButton.style.display = 'none';
@@ -176,23 +176,23 @@ function showResults() {
     if (score === quizData.length) {
         customMessage = "Perfect score! You're an expert!";
         imgSrc = "Hapy-James.gif";
-        resultMusicSrc = "Celebrate.mp3";
+        resultMusicSrc = "sounds/Celebrate.mp3";
     } else if (score === quizData.length - 1) {
         customMessage = "Almost perfect! Great job!";
         imgSrc = "Happy-James.gif";
-        resultMusicSrc = "Celebrate.mp3";
+        resultMusicSrc = "sounds/Celebrate.mp3";
     } else if (score >= quizData.length / 2) {
         customMessage = "Good job! You have a solid understanding.";
         imgSrc = "Relieved-James.gif";
-        resultMusicSrc = "Normal.mp3";
+        resultMusicSrc = "sounds/Normal.mp3";
     } else if (score === 0) {
         customMessage = "Don't worry, everyone starts somewhere.";
         imgSrc = "Sad-James.gif";
-        resultMusicSrc = "Fail.mp3";
+        resultMusicSrc = "sounds/Fail.mp3";
     } else {
         customMessage = "Keep practicing! You'll get better!";
         imgSrc = "Normal-James.gif";
-        resultMusicSrc = "Normal.mp3";
+        resultMusicSrc = "sounds/Normal.mp3";
     }
 
     music.src = resultMusicSrc;
