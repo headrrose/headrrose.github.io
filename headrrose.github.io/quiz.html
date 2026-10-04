@@ -3,39 +3,44 @@
     <head>
         <meta charset = "utf-8">
         <title>Scene it? - Quiz time!</title>
-        <link rel="icon" type="image/png" href="Yay.png">
+        <link rel="icon" type="image/png" href="images/Yay.png">
+        <link rel="stylesheet" href="quizStyles.css">
     </head>
     <body>
+        <audio id="hover-sound" src="sounds/hover-sound.mp3" preload="auto"></audio>
+        <audio id="click-sound" src="sounds/click-sound.mp3" preload="auto"></audio>    
         <div id="nav-home">
         <header class='navbar'>
             <div class="mainnav">         
                 <ul class="navitems">
                     <div class="DROPDOWN">
-                        <li><a href="" class="Learn">Learn</a></li>
+                        <li><button href="" class="Learn">Learn ↓</button></li>
                         <div class="LEARNdropdown">
-                            <a href="">The 12 Principles</a>
-                            <a href="">Placeholder</a>
+                            <a href="" onclick="return confirm('Are you sure you want to leave the quiz? Your current progress will be lost!');">The 12 Principles</a>
+                            <a href="" onclick="return confirm('Are you sure you want to leave the quiz? Your current progress will be lost!');">Quick Fun Facts</a>
+                            <a href="" onclick="return confirm('Are you sure you want to leave the quiz? Your current progress will be lost!');">History</a>
                         </div>
                     </div> 
-                    <li><a href="index.html" class="Home">Home</a></li>
-                    <li><a href="AboutUs.html" class="AboutUs">About us</a></li>
-                    <li><a href="HelpPage.html" class="Help">Help</a></li>           
+                    <li><a href="index.html" class="Home" onclick="return confirm('Are you sure you want to leave the quiz? Your current progress will be lost!');">Home</a></li>
+                    <li><a href="AboutUs.html" class="AboutUs" onclick="return confirm('Are you sure you want to leave the quiz? Your current progress will be lost!');">About us</a></li>
+                    <li><a href="HelpPage.html" class="Help" onclick="return confirm('Are you sure you want to leave the quiz? Your current progress will be lost!');">Help</a></li>           
                 </ul>
             </div>
+            <audio id="background-music" autoplay loop>
+                <source src="sounds/Kahoot Lobby Music.mp3" type="audio/mpeg">
+            </audio>
         </header>
-        <span class="question-number">Question 1 !!</span>
-        <div class="question-box">
-            What's the first principle of animation?
-        </div>
-        <div class="options">
-            <button onclick="checkQuestion('incorrect')">Anticipation</button>
-            <button onclick="checkQuestion('correct')">Squash and Stretch</button>
-            <button onclick="checkQuestion('incorrect')">Staging</button>
-            <button onclick="checkQuestion('incorrect')">Ease in, Ease out</button>
-        </div>
-        <p id="answer1"></p>
-    <script src="scripts.js"></script>
+        <main class="quiz-section">
+            <span class="question-number" id="question-counter">Question 1 !!</span>
+            <div id="quiz">
+                <div class="question-box">
+                    <h1 id="question"><</h1>
+                </div>
+                <div class="options" id="options-container"></div>
+            </div>
+            <button id="next-btn"></button>
+        </main>
+    <script src="quizscripts.js"></script>
 </body>
 </html>
-<link rel="stylesheet" href="quizStyles.css">
 
