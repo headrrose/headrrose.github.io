@@ -9,17 +9,17 @@ const quizData = [
     {
         question: "What's the first principle of animation?",
         options: ["Staging", "Anticipation", "Squash and stretch", "Ease in, Ease out"],
-        answer: "Squash and stretch",
+        answer: "Squash and stretch"
     },   
-    {
-        question: "Which animation technique was first introduced?",
-        options: ["Stop motion", "Frame-by-frame", "Tweening", "Rotoscoping"],
-        answer: "Frame-by-frame",
-    },
     {
         question: "What is the term for the process of creating smooth transitions between keyframes?",
         options: ["In-betweening", "Keyframing", "Timing", "Exaggeration"],
         answer: "In-betweening"
+    },
+    {
+        question: "What's the name of the 3D skeleton used to move a character",
+        options: ["Rendering", "Rigging", "Texturing", "Modelling"],
+        answer: "Rigging"        
     },
     {
         question: "Who discovered the 12 principles of animation?",
@@ -30,6 +30,11 @@ const quizData = [
         question: "Which principle defines how long an action takes from start to finish?",
         options: ["Anticipation", "Longitudinal motion", "Secondary action", "Timing"],
         answer: "Timing"
+    },
+    {
+        question: "What's the purpose of using 'Anticipation' before a major action? ",
+        options: ["To increase the frame-rate of the scene", "To create a motion lag in accessories", "So the character maintains a constant volume", "To prepare the audience for an action"],
+        answer: "To prepare the audience for an action"
     },
     {
         question: "What is the term for the exaggeration of movement or expression in animation?",
@@ -50,6 +55,31 @@ const quizData = [
         question: "Which one of these isn't a principle of animation?",
         options: ["Anticipation", "Follow-through", "Ease-in-Ease-Out", "Preservation"],
         answer: "Preservation"
+    },
+    {
+        question: "Which animation technique was first introduced?",
+        options: ["Stop motion", "Frame-by-frame", "Tweening", "Rotoscoping"],
+        answer: "Frame-by-frame",
+    },
+    {
+        question: "What core technique defines stop-motion animation across forms like claymation and puppet animation?",
+        options: ["Using Keyframes automatically with computer algorithms", "Drawing frames one by one", "Manipulating objects and photographing them", "Tracing over continuous live footage"],
+        answer: "Manipulating objects and photographing them"       
+    },
+    {
+        question:"Why do so many natural movements in animation follow an arc rather than a straight line?",
+        options: ["Joints rotate on a pivot, making curved paths seem natural","Straight lines require too many immediate keyframes, and slow down the process", "Arcs prevent the backrounds fro moving out of sync", "Straight lines violate the rule of volume conservation established by squash and stretch"],
+        answer: "Joints rotate on a pivot, making curved paths seem natural",
+    },
+    {
+        question: "Is tracing animation allowed?",
+        options: ["Always", "As long as it's for practice/Rotoscope", "Only if it isn't posted", "Never"],
+        answer: "As long as it's for practice/Rotoscope"
+    },
+    {
+        question: "What does FPS mean?",
+        options: ["Frames per scene", "Figures per second","Frames per second","Figures per scene"],
+        answer: "Frames per second"
     }
 ]
 
