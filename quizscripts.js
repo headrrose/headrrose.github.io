@@ -17,9 +17,24 @@ const quizData = [
         answer: "In-betweening"
     },
     {
-        question: "What's the name of the 3D skeleton used to move a character",
+        question: "What's the name of the 3D skeleton used to move a character?",
         options: ["Rendering", "Rigging", "Texturing", "Modelling"],
         answer: "Rigging"        
+    },
+    {
+        question: "Which type of animation is flat in appearance?",
+        options: ['Computer animation', '3d animation', '2d animation', '1d animation'],
+        answer: "2d animation"
+    },
+    {
+        question: "Digital animation can be used to make which of the following?",
+        options: ["Interactive advertisements", "Games", "Clickable tutorials", "All of the above"],
+        answer: "All of the above"
+    },
+    {
+        question: "What's the traditional speed of frames in a 2D animated motion picture?",
+        options: ["It varies depending on the number of drawings", "24 frames per second", "12 frames per second", "48 frames per second"],
+        answer: "24 frames per second"
     },
     {
         question: "Who discovered the 12 principles of animation?",
@@ -42,12 +57,17 @@ const quizData = [
         answer: "Exaggeration"
     },    
     {
-        question: "A simple 20 second animation can take months to produce",
+        question: "A simple 20 second animation can take months to produce.",
         options: ["True", "False"],
         answer: "True"
     },    
     {
-        question: "\"Steamboat Willie\" was the first ever animation with synchronized sound",
+        question: "Frame-based animation is like a \"flipbook\"",
+        options: ["True", "False"],
+        answer: "True"
+    },
+    {
+        question: "\"Steamboat Willie\" was the first ever animation with synchronized sound.",
         options: ["True", "False",],
         answer: "False"
     },    
@@ -55,6 +75,11 @@ const quizData = [
         question: "Which one of these isn't a principle of animation?",
         options: ["Anticipation", "Follow-through", "Ease-in-Ease-Out", "Preservation"],
         answer: "Preservation"
+    },
+    {
+        question: "A keyframe is:",
+        options: ["A software", "An animation technique", "A still image", "An audio file"],
+        answer: "A still image"        
     },
     {
         question: "Which animation technique was first introduced?",
