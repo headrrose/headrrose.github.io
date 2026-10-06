@@ -1,0 +1,250 @@
+
+.mainnav {
+  background-color: #ffff;
+  background-image: linear-gradient(to left,rgb(255, 251, 239) 20%, transparent 90%);
+  border-bottom: 3px solid #d7bb93;
+  width: 100vw;
+  height: 4.45rem;
+}
+
+
+body {
+  background-image: radial-gradient(transparent 2%, rgb(250, 237, 221)), url(https://i.pinimg.com/236x/4e/df/14/4edf14c48c80a555bc4566a681965121.jpg);
+  display: flex;
+  padding: 0px;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.square {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(white 90%, transparent);
+  text-align: center;
+  align-items: center;
+  margin: 1.25rem 10.625rem;
+  padding-bottom: 100px;
+  min-width: 100px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.squaretext{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#squareH1 {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  position:relative;
+  padding: 25px;
+  margin-top: 20px;
+  font-size: 50px;
+  color:#915319;
+  text-decoration: underline;
+  margin-bottom: -68px;
+}
+
+#squareP1 li {
+  margin-bottom: 12px;
+}
+
+#squareP1 a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #74480a;
+}
+
+#squareP1 a:hover {
+  text-decoration: underline;
+}
+
+#squareH2 {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  position:relative;
+  padding: 25px;
+  margin-top: 40px;
+  text-align: left;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  font-size: 30px;
+  color:#b77111;
+  text-decoration: underline;
+}
+
+#squareP1 {
+  text-align: left;
+  margin: -35px 20px -30px 20px;
+  color: #88560f;
+  font-size: large;
+}
+
+#squareP2 {
+  margin-top: 70px; 
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #88560f;
+}
+
+#spoiler {
+  margin: 40px 20px;
+  color: #88560f;
+}
+
+#squareP3 {
+  margin: 30px 20px;
+  color: #88560f;
+}
+
+#autoHeader {
+  margin: 100px 20px -50px 20px;
+  text-decoration: underline;
+  color: #b77111;
+}
+
+nav {
+  display: flex;
+  list-style: none;
+}
+
+
+.navbar {
+  display:flex;
+}
+
+.leftnav {
+  margin-right: auto;
+  float:left;
+  text-align: left;
+  padding: 10px 50px;
+  text-decoration: none;
+  color:#b77111;
+  font-size: 20px;
+  padding: 0px;
+}
+
+#startquiz {
+  margin: 7px;
+  background-color: rgb(255, 255, 219);
+  border-radius: 1%;
+  padding: 1rem 1rem;
+  color:#b77111;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+#startquiz:hover {
+  background-color: #b77111;
+  color: white;
+  border-radius: 1%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.navitems {
+  justify-content:center;
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+
+.rightnav {
+  justify-content: start;
+  padding: 7px 50px;
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.Home {
+  text-decoration: none;
+  color:#b77111;
+  padding-left: 10px;
+  font-size: 20px;
+  text-align: right;
+}
+
+
+.AboutUs {
+  text-decoration: none;
+  color:#b77111;
+  font-size: 20px;
+  padding: 0px;
+}
+
+.Help {
+  text-decoration: none;
+  color:#b77111;
+  font-size: 20px;
+  padding: 0px;
+}
+
+
+.Help:hover {
+  text-decoration: underline;
+}
+
+
+.Home:hover {
+  text-decoration:underline;
+}
+
+
+.AboutUs:hover {
+  text-decoration:underline;
+}
+
+.DROPDOWN {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.DROPDOWN .Learn {
+  text-decoration: none;
+  color:#b77111;
+  padding: 0;
+  font-size: 20px;
+  text-align: right;
+  font-size: none;
+  border: none;
+  outline: none;
+}
+
+.Learn {
+  font-family:'Times New Roman', Times, serif;
+  background-color: inherit;
+  color: white;
+  padding: 0px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.Learn:hover {
+  text-decoration: underline;  
+}
+
+.LEARNdropdown {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.LEARNdropdown a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family:'Times New Roman', Times, serif;
+  color: #684718;
+}
+
+.LEARNdropdown a:hover {
+  background-color: #b69567;
+  color: #f9f9f9;
+}
+
+.DROPDOWN:hover .LEARNdropdown {
+  display: block;
+}
