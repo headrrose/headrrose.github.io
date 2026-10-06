@@ -233,7 +233,7 @@ nav {
 
 
 #startbtn:active {
-  transform: scale(0.9);
+  transform: scaleY(0.9);
   border: 5px solid #b77222;
   background: radial-gradient(rgb(250, 246, 246), rgb(244, 238, 217));
   color: #684718;
@@ -249,8 +249,8 @@ nav {
 }
 
 #aboutbtn:active {
-  transform: scale(0.9);
-  border: 1px solid #b77222;
+  transform: scaleY(0.9);
+  border: 5px solid #b77222;
   background: radial-gradient(rgb(250, 246, 246), rgb(244, 238, 217));
   color: #684718;
 }
