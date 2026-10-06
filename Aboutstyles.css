@@ -43,7 +43,7 @@ body {
 }
 
 #squareP1 {
-  margin: -35px 20px;
+  margin: -30px 35px;
   color: #88560f;
 }
 
@@ -60,12 +60,12 @@ body {
 }
 
 #squareP3 {
-  margin: 30px 20px;
+  margin: 30px 20px -10px 20px;
   color: #88560f;
 }
 
 #autoHeader {
-  margin: 100px 20px -50px 20px;
+  margin: 65px 20px -50px 20px;
   text-decoration: underline;
   color: #b77111;
 }
