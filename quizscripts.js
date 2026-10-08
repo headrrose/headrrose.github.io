@@ -210,19 +210,19 @@ function selectAnswer(e, optionText) {
         selectedButton.style.background = 'green';
         selectedButton.style.color = 'white';
         selectedButton.style.border = '3.5px solid #0c472f';
-        feedBack.innerText = quizData[currentQuestion].feedback || "Correct!";
+        feedBack.style.display = 'none'
     } else {
         selectedButton.classList.add('incorrect');
         highlightCorrectAnswer(correctAnswer);
         selectedButton.style.background = 'red';
         selectedButton.style.color = 'white';
         selectedButton.style.border = '3.5px solid #711515';
+        feedBack.style.display = 'block';
         feedBack.innerText = quizData[currentQuestion].feedback || `The correct answer is: ${correctAnswer} (head over to the learn pages to find out more).`;
     }
 
     // Displays next button + change text to "Finish Quiz" if it's the last question
     nextButton.style.display = 'block';
-    feedBack.style.display = 'block';
     nextButton.innerText = currentQuestion === quizData.length - 1 ? 'Finish Quiz' : 'Next Question';
 }
 

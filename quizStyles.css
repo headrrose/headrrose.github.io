@@ -153,6 +153,10 @@ nav {
   display: block;
 }
 
+.quiz-section {
+  animation: fadeIn 0.4s ease-out;
+}
+
 .question-number {
   display: inline-block;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
