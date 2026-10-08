@@ -2,11 +2,31 @@
 <html lang="en">
     <head>
         <meta charset = "utf-8">
-        <title>Scene it? - Home Page</title>
-        <link rel="icon" type="image/png" href="images/Yay.png">
+        <title>Scene it? - Learn - History</title>
+        <link rel="icon" type="image/png" href="images/favicon.png">
         <link rel="stylesheet" href="History.css">
     </head>
     <body>
-        
+        <audio id="hover-sound" src="sounds/hover-sound.mp3" preload="auto"></audio>
+        <audio id="click-sound" src="sounds/click-sound.mp3" preload="auto"></audio>        
+        <div id="nav-home">
+        <header class='navbar'>
+            <div class="mainnav">         
+                <ul class="navitems">
+                    <div class="DROPDOWN">
+                        <li><button href="" class="Learn">Learn ↓</button></li>
+                        <div class="LEARNdropdown">
+                            <a href="12Principles.html" class="sound">The 12 Principles</a>
+                            <a href="FunFacts.html" class="sound">Quick Fun Facts</a>
+                            <a href="History.html" class="sound">History</a>
+                        </div>
+                    </div> 
+                    <li><a href="index.html" class="Home">Home</a></li>
+                    <li><a href="AboutUs.html" class="AboutUs">About us</a></li>
+                    <li><a href="HelpPage.html" class="Help">Help</a></li>
+                </ul>
+            </div>
+        </header>
+        <script src="Learn.js"></script>
     </body>
 </html>

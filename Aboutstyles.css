@@ -34,14 +34,21 @@ body {
 
 .squaretext{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: left;
+}
+
+#welcome {
+  margin: 50px 35px 40px 35px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 39px;
+  color:#915319;
+  text-decoration: none;
 }
 
 #squareH1 {
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   position:relative;
-  padding: 25px;
-  margin-top: 35px;
-  font-size: 50px;
+  margin: 0px 30px 50px 35px;
   color:#b77111;
   text-decoration: underline;
 }
@@ -52,9 +59,7 @@ body {
 }
 
 #squareP2 {
-  margin-top: 70px; 
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: -30px 35px;
   color: #88560f;
 }
 
@@ -69,7 +74,7 @@ body {
 }
 
 #autoHeader {
-  margin: 65px 20px -50px 20px;
+  margin: 50px 35px;
   text-decoration: underline;
   color: #b77111;
 }
