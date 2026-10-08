@@ -1,3 +1,6 @@
+@view-transition {
+  navigation: auto;
+}
 
 .mainnav {
   background-color: #ffff;
@@ -58,6 +61,7 @@ nav {
   padding-left: 10px;
   font-size: 20px;
   text-align: right;
+  transition: 0.2s ease-in-out, text-decoration 0.2s;
 }
 
 
@@ -66,6 +70,7 @@ nav {
   color:#b77111;
   font-size: 20px;
   padding: 0px;
+  transition: 0.3s;
 }
 
 .Help {
@@ -73,20 +78,27 @@ nav {
   color:#b77111;
   font-size: 20px;
   padding: 0px;
+  transition: 0.3s;
 }
 
 .Help:hover {
   text-decoration: underline;
   cursor: pointer;
+  font-size: 22px;
+  transition: 0.3s;
 }
 
 .Home:hover {
   text-decoration: underline;
+  font-size: 22px;
+  transition: 0.3s;
 }
 
 
 .AboutUs:hover {
   text-decoration: underline;
+  font-size: 22px;
+  transition: 0.3s;
 }
 
 .DROPDOWN {
@@ -113,10 +125,13 @@ nav {
   padding: 0px;
   text-decoration: none;
   display: inline-block;
+  transition: 0.3s;
 }
 
 .Learn:hover {
   text-decoration: underline;  
+  font-size: 20.5px;
+  transition: 0.3s;
 }
 
 .LEARNdropdown {
@@ -135,11 +150,14 @@ nav {
   display: block;
   font-family:'Times New Roman', Times, serif;
   color: #684718;
+  transition: 0.3s;
 }
 
 .LEARNdropdown a:hover {
   background-color: #b69567;
   color: #f9f9f9;
+  font-size: 15px;
+  transition: 0.3s;
 }
 
 .DROPDOWN:hover .LEARNdropdown {
@@ -241,7 +259,7 @@ nav {
 
 #aboutbtn:hover {
   transform: scaleY(1.2);
-  border: 2px solid #edd1b1;
+  border: 2px solid #b59775;
   background: radial-gradient(#fef8e6ff, white);;
   color: #684718;
   transition: 0.3s;

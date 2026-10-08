@@ -1,3 +1,34 @@
+// Button sounds
+document.addEventListener('DOMContentLoaded', function() {
+    const hoverSound = document.getElementById('hover-sound');
+    const clickSound = document.getElementById('click-sound');
+    const soundLinks = document.querySelectorAll('.sound');
+
+    soundLinks.forEach(link => {
+        link.addEventListener('mouseenter', () => {
+            hoverSound.currentTime = 0;
+            hoverSound.play();
+                console.log('Hover sound played');
+            });
+
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            const destination = this.href;
+            clickSound.currentTime = 0;
+            clickSound.play().catch(() => {
+
+            });
+
+            clickSound.onended = () => {
+                window.location.href = destination;
+            }
+        setTimeout(() => {
+            window.location.href = destination;
+         },250);
+        });
+    });
+});
+
 const music = document.getElementById('background-music');
 document.addEventListener('click', () =>{
     music.play();
@@ -261,8 +292,8 @@ function showResults() {
             <h1 id="customMessage">${customMessage}</h1>
             <p id="score">Your score: ${score}/${quizData.length}</p>
             <div id="finish-btns">
-                <button id="restart-btn" onclick="location.reload()">Restart Quiz</button>
-                <button id="home-btn" onclick="window.location.href='index.html'">Go home</button>
+                <button class="sound" id="restart-btn" onclick="location.reload()">Restart Quiz</button>
+                <button class="sound" id="home-btn" onclick="window.location.href='index.html'">Go home</button>
             </div>
             <img id="James" src="${imgSrc}" alt="Image of James">
         </div>
