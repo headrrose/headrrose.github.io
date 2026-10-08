@@ -40,17 +40,17 @@ const quizData = [
     {
         question: "What's the first principle of animation?",
         options: ["Staging", "Anticipation", "Squash and stretch", "Ease in, Ease out"],
-        answer: "Squash and stretch"
+        answer: "Squash and stretch",
     },   
     {
         question: "What is the term for the process of creating smooth transitions between keyframes?",
         options: ["In-betweening", "Keyframing", "Timing", "Exaggeration"],
-        answer: "In-betweening"
+        answer: "In-betweening",
     },
     {
         question: "What's the name of the 3D skeleton used to move a character?",
         options: ["Rendering", "Rigging", "Texturing", "Modelling"],
-        answer: "Rigging"        
+        answer: "Rigging",
     },
     {
         question: "Which type of animation is flat in appearance?",
@@ -146,6 +146,7 @@ const questionElement = document.getElementById('question');
 const optionsElement = document.getElementById('options-container');
 const nextButton = document.getElementById('next-btn');
 const counterElement = document.getElementById('question-counter');
+const feedBack = document.getElementById('feedback');
 
 // Variables
 let currentQuestion = 0;
@@ -167,6 +168,7 @@ function showQuestion () {
 
     //Next button is hidden until an option is selected
     nextButton.style.display = 'none';
+    feedBack.style.display = 'none';
 
     // Create buttons for each option
     question.options.forEach(option => {
@@ -208,16 +210,19 @@ function selectAnswer(e, optionText) {
         selectedButton.style.background = 'green';
         selectedButton.style.color = 'white';
         selectedButton.style.border = '3.5px solid #0c472f';
+        feedBack.innerText = quizData[currentQuestion].feedback || "Correct!";
     } else {
         selectedButton.classList.add('incorrect');
         highlightCorrectAnswer(correctAnswer);
         selectedButton.style.background = 'red';
         selectedButton.style.color = 'white';
         selectedButton.style.border = '3.5px solid #711515';
+        feedBack.innerText = quizData[currentQuestion].feedback || `The correct answer is: ${correctAnswer} (head over to the learn pages to find out more).`;
     }
 
     // Displays next button + change text to "Finish Quiz" if it's the last question
     nextButton.style.display = 'block';
+    feedBack.style.display = 'block';
     nextButton.innerText = currentQuestion === quizData.length - 1 ? 'Finish Quiz' : 'Next Question';
 }
 
@@ -253,6 +258,7 @@ function showResults() {
 
     counterElement.innerText = '';
     nextButton.style.display = 'none';
+    feedBack.style.display = 'none';
 
     music.pause();
 
