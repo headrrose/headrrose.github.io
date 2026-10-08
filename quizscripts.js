@@ -124,8 +124,9 @@ const quizData = [
     },
     {
         question:"Why do so many natural movements in animation follow an arc rather than a straight line?",
-        options: ["Joints rotate on a pivot, making curved paths seem natural","Straight lines require too many immediate keyframes, and slow down the process", "Arcs prevent the backrounds from moving out of sync", "Straight lines violate the rule of volume conservation established by squash and stretch"],
-        answer: "Joints rotate on a pivot, making curved paths seem natural",
+        options: ["A. Joints rotate on a pivot, making curved paths seem natural","B. Straight lines require too many immediate keyframes, and slow down the process", "C. Arcs prevent the backrounds from moving out of sync", "D. Straight lines violate the rule of volume conservation established by squash and stretch"],
+        answer: "A. Joints rotate on a pivot, making curved paths seem natural",
+        feedback: "The correct answer is: A (head over to the learn pages to find out more)"
     },
     {
         question: "Is tracing animation allowed?",
