@@ -45,6 +45,14 @@ body {
   text-decoration: none;
 }
 
+#havefun {
+  margin: 50px 35px 0px 35px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 39px;
+  color:#915319;
+  text-decoration: none;
+}
+
 #squareH1 {
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   position:relative;
