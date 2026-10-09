@@ -133,6 +133,7 @@ nav {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 17px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 #startquiz:hover {
@@ -141,6 +142,16 @@ nav {
   border-radius: 1%;
   transition: 0.3s;
   cursor: pointer;
+  animation: float 0.3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0)
+  }
+  50% {
+    transform: translateY(2px)
+  }
 }
 
 .navitems {
