@@ -128,6 +128,17 @@ nav {
   transition: 0.3s;
 }
 
+.Learn .arrow {
+  vertical-align: middle;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.DROPDOWN:hover .Learn .arrow {
+  transform: rotate(-180deg);
+  transition: 0.3s;
+}
+
 .Learn:hover {
   text-decoration: underline;  
   font-size: 20.5px;
@@ -163,7 +174,6 @@ nav {
 .DROPDOWN:hover .LEARNdropdown {
   display: block;
 }
-
 
 .scene {
   white-space: pre-wrap;

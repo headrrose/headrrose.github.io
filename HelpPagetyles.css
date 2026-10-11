@@ -217,6 +217,17 @@ nav {
   transition: 0.3s;
 }
 
+.Learn .arrow {
+  vertical-align: middle;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.DROPDOWN:hover .Learn .arrow {
+  transform: rotate(-180deg);
+  transition: 0.3s;
+}
+
 .DROPDOWN {
   position: relative;
   display: inline-block;

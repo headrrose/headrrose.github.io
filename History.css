@@ -2,6 +2,10 @@
   navigation: auto;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .mainnav {
   background-color: #ffffff;
   background-image: linear-gradient(to left,rgb(255, 251, 239) 20%, transparent 90%);
@@ -113,6 +117,17 @@ nav {
   padding: 0px;
   text-decoration: none;
   display: inline-block;
+  transition: 0.3s;
+}
+
+.Learn .arrow {
+  vertical-align: middle;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.DROPDOWN:hover .Learn .arrow {
+  transform: rotate(-180deg);
   transition: 0.3s;
 }
 
