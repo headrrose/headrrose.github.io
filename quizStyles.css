@@ -23,6 +23,54 @@ a {
   text-decoration: none;
 }
 
+#loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fae8bd;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.4s ease, visibility 0.4s;
+}
+
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.spinner {
+  width: 45px;
+  height: 45px;
+  border: 3px solid transparent;
+  border-top: 3px solid #b77111;
+  border-right: 3px solid #b77111;
+  border-radius: 50%;
+  animation: spin 0.9s linear infinite;
+}
+
+.loading-text {
+  color: #b77111;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 0.95rem;
+  letter-spacing: 2px;
+}
+
+@keyframes spin {
+  0% {transform: rotate(0deg)}
+  100% {transform: rotate(360deg)}
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
 nav {
   display: flex;
   list-style: none;

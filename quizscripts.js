@@ -1,3 +1,9 @@
+// Loading screen
+window.addEventListener('load', () => {
+    const loader =document.getElementById('loading-screen');
+    loader.classList.add('hidden');
+})
+
 // Button sounds
 document.addEventListener('DOMContentLoaded', function() {
     const hoverSound = document.getElementById('hover-sound');
