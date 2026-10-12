@@ -7,24 +7,25 @@ document.addEventListener('DOMContentLoaded', function() {
     soundLinks.forEach(link => {
         link.addEventListener('mouseenter', () => {
             hoverSound.currentTime = 0;
-            hoverSound.play();
+            hoverSound.play().catch(() => {});
                 console.log('Hover sound played');
             });
 
         link.addEventListener('click', function(event) {
+            const actualLink = this.tagName === 'A' ? this : this.querySelector('a');
+            const destination = actualLink ? actualLink.getAttribute('href') : null;
+            if (!destination) return;
+
             event.preventDefault();
-            const destination = this.href;
             clickSound.currentTime = 0;
-            clickSound.play().catch(() => {
+            clickSound.play().catch(() => {});
 
-            });
-
-            clickSound.onended = () => {
-                window.location.href = destination;
+            const navigate = () => {
+                window.location.href = destination
             }
-        setTimeout(() => {
-            window.location.href = destination;
-         },250);
+
+            clickSound.onended = navigate;
+            setTimeout(navigate, 250)
         });
     });
 });

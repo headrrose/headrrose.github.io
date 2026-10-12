@@ -25,7 +25,7 @@ html {
   border: 2px solid white;
   box-shadow: 0 10px 30px 0px rgba(126, 80, 55, 0.4);
   border-bottom: 7px solid rgb(173, 147, 127);
-  margin: 15px 15px auto 15px;
+  margin: 15px 25px auto 15px;
 }
 
 #PrinceH1 {
@@ -42,7 +42,21 @@ html {
   margin: -20px 50px 50px 50px;
   text-shadow: 0px 0px 0px #e8d5c1;
   color: #c4976a;
-  max-width: 590px;
+  max-width: 550px;
+}
+
+#PrinceP1 a {
+  text-decoration: underline;
+  color: #815932;
+  transition: 0.3s;
+}
+
+#PrinceP1 a:hover {
+  font-size: 18px;
+  transition: 0.3s;
+  color: #684718;
+  text-shadow: 0px 0px 10px #ffd7ad;
+  font-weight: 700;
 }
 
 .imageOfTeamR {
@@ -52,6 +66,107 @@ html {
   margin-top: -38px;
   transform: scale(0.9);
   z-index: 2;
+}
+
+.content-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.sidenav {
+  width: 250px;
+  padding: 20px;
+  position: sticky;
+  margin: -5px 5px -5px -5px;
+  background-color: #d0b187;
+  top: 20px;
+  border-radius: 5px;
+  box-shadow: 0 10px 30px 0px rgba(215, 182, 165, 0.4);
+}
+
+.sidenav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  border-left:#fff7f0 4px solid
+}
+
+.sidenav .nav-item {
+  display: block;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #5d4625;
+  font-size: 18px;
+  border-left: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidenav .nav-item:hover {
+  border-left: 5px solid #5d4625;
+  background-color: #fff7f0;
+  color: #a2865e;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.content section {
+  scroll-margin-top: 100px ;
+  background-color: #fffaf4;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px #d0b187;
+  max-width: 850px;
+}
+
+.content h2 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #5d4625;
+  font-size: 26px;
+  margin: 10px 20px 10px 20px;
+}
+
+.content ol {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #5d4625;
+  font-size: 17px;
+  margin: 10px 20px 10px auto;
+}
+
+.content h4 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #b17624;
+  margin: 15px 20px;
+}
+
+.content p {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #c4976a;
+  margin: 10px 20px 10px 20px;
+  font-size: 15px;
+}
+
+#Follow-through img {
+  filter: sepia(10) saturate(0.5);
+}
+
+.section {
+  display: flex;
+  align-items: center;
+}
+
+.AnimationImage img{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* add linear-gradient(to top, white, transparent) after i figure out how i want the homepage to look*/

@@ -110,22 +110,46 @@ html {
   margin-bottom: 20px;
   border-radius: 5px;
   box-shadow: 0px 2px 4px #d0b187;
+  max-width: 850px;
 }
 
 .content h2 {
-  margin-top: 3px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: #5d4625;
+  font-size: 26px;
+  margin: 10px 20px 10px 20px;
 }
 
 .content h4 {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: #b17624;
+  margin: 15px 20px;
 }
 
 .content p {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: #c4976a;
+  margin: 10px 20px 10px 20px;
+}
+
+#Follow-through img {
+  filter: sepia(10) saturate(0.5);
+}
+
+#Secondary-action img {
+  filter: sepia(0.7) saturate(0.55);
+}
+
+.section {
+  display: flex;
+  align-items: center;
+}
+
+.AnimationImage img{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* add linear-gradient(to top, white, transparent) after i figure out how i want the homepage to look*/
