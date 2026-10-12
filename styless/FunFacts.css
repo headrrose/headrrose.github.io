@@ -1,0 +1,366 @@
+@view-transition {
+  navigation: auto;
+}
+
+.mainnav {
+  background-color: #ffff;
+  background-image: linear-gradient(to left,rgb(255, 251, 239) 20%, transparent 90%);
+  border-bottom: 3px solid #d7bb93;
+  width: 100vw;
+  height: 4.45rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#uh {
+  padding: 20rem;
+}
+
+#Hero-section {
+  background-color: white;
+  background-image: linear-gradient(to bottom, white, #f3f0e6ff);
+  padding-bottom: 10px;
+  border: 2px solid white;
+  box-shadow: 0 10px 30px 0px rgba(126, 80, 55, 0.4);
+  border-bottom: 7px solid rgb(173, 147, 127);
+  margin: 15px 25px auto 15px;
+}
+
+#PrinceH1 {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 30px 40px 40px 40px;
+  text-shadow: 4px 0px 2px #e9ddcc;
+  font-size: 4rem;
+  color: #b17624;
+}
+
+#PrinceP1 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  left: 0;
+  margin: -20px 50px 50px 50px;
+  text-shadow: 0px 0px 0px #e8d5c1;
+  color: #c4976a;
+  max-width: 550px;
+}
+
+#PrinceP1 a {
+  text-decoration: underline;
+  color: #815932;
+  transition: 0.3s;
+}
+
+#PrinceP1 a:hover {
+  font-size: 18px;
+  transition: 0.3s;
+  color: #684718;
+  text-shadow: 0px 0px 10px #ffd7ad;
+  font-weight: 700;
+}
+
+.imageOfTeamR {
+  position: absolute;
+  right: 50px;
+  filter: sepia(0.8) saturate(0.6) drop-shadow(8px 8px 4px #bba28d);
+  margin-top: -38px;
+  transform: scale(0.9);
+  z-index: 2;
+}
+
+.content-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.sidenav {
+  width: 250px;
+  padding: 20px;
+  position: sticky;
+  margin: -5px 5px -5px -5px;
+  background-color: #d0b187;
+  top: 20px;
+  border-radius: 5px;
+  box-shadow: 0 10px 30px 0px rgba(215, 182, 165, 0.4);
+}
+
+.sidenav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  border-left:#fff7f0 4px solid
+}
+
+.sidenav .nav-item {
+  display: block;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #5d4625;
+  font-size: 18px;
+  border-left: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidenav .nav-item:hover {
+  border-left: 5px solid #5d4625;
+  background-color: #fff7f0;
+  color: #a2865e;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.content section {
+  scroll-margin-top: 100px ;
+  background-color: #fffaf4;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px #d0b187;
+  max-width: 850px;
+}
+
+.content h2 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #5d4625;
+  font-size: 26px;
+  margin: 10px 20px 10px 20px;
+}
+
+.content ol {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #5d4625;
+  font-size: 17px;
+  margin: 10px 20px 10px auto;
+}
+
+.content h4 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #b17624;
+  margin: 15px 20px;
+}
+
+.content p {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #c4976a;
+  margin: 10px 20px 10px 20px;
+  font-size: 15px;
+}
+
+#Follow-through img {
+  filter: sepia(10) saturate(0.5);
+}
+
+.section {
+  display: flex;
+  align-items: center;
+}
+
+.AnimationImage img{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* add linear-gradient(to top, white, transparent) after i figure out how i want the homepage to look*/
+body {
+  background-image: linear-gradient(to right, rgb(255, 233, 210), transparent), url(https://i.pinimg.com/236x/4e/df/14/4edf14c48c80a555bc4566a681965121.jpg);
+  display: flex;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  transition: 0.3s;
+}
+
+nav {
+  display: flex;
+  list-style: none;
+}
+
+
+.navbar {
+  display:flex;
+}
+
+.leftnav {
+  margin-right: auto;
+  float:left;
+  text-align: left;
+  padding: 10px 50px;
+  text-decoration: none;
+  color:#b77111;
+  font-size: 20px;
+  padding: 0px;
+}
+
+#startquiz {
+  margin: 7px;
+  background-color: rgb(255, 255, 219);
+  border-radius: 1%;
+  padding: 1rem 1rem;
+  color:#b77111;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#startquiz:hover {
+  background-color: #b77111;
+  color: white;
+  border-radius: 1%;
+  transition: 0.3s;
+  cursor: pointer;
+  animation: float 0.3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0)
+  }
+  50% {
+    transform: translateY(2px)
+  }
+}
+
+.navitems {
+  justify-content:center;
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+
+.rightnav {
+  justify-content: start;
+  padding: 7px 50px;
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.Home {
+  text-decoration: none;
+  color:#b77111;
+  padding-left: 10px;
+  font-size: 20px;
+  text-align: right;
+  transition: 0.3s;
+}
+
+
+.AboutUs {
+  text-decoration: none;
+  color:#b77111;
+  font-size: 20px;
+  padding: 0px;
+  transition: 0.3s;
+}
+
+.Help {
+  text-decoration: none;
+  color:#b77111;
+  font-size: 20px;
+  padding: 0px;
+  transition: 0.3s;
+}
+
+
+.Help:hover {
+  text-decoration: underline;
+  font-size: 22px;
+  transition: 0.3s;
+}
+
+
+.Home:hover {
+  text-decoration:underline;
+  font-size: 22px;
+  transition: 0.3s;
+}
+
+
+.AboutUs:hover {
+  text-decoration:underline;
+  font-size: 22px;
+  transition: 0.3s;
+}
+
+.DROPDOWN {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.DROPDOWN .Learn {
+  text-decoration: none;
+  color:#b77111;
+  padding: 0;
+  font-size: 20px;
+  text-align: right;
+  font-size: none;
+  border: none;
+  outline: none;
+}
+
+.Learn {
+  font-family:'Times New Roman', Times, serif;
+  background-color: inherit;
+  color: white;
+  padding: 0px;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.Learn .arrow {
+  vertical-align: middle;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.DROPDOWN:hover .Learn .arrow {
+  transform: rotate(-180deg);
+  transition: 0.3s;
+}
+
+.Learn:hover {
+  text-decoration: underline;  
+  font-size: 20.5px;
+  transition: 0.3s;
+}
+
+.LEARNdropdown {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 3;
+}
+
+.LEARNdropdown a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family:'Times New Roman', Times, serif;
+  color: #684718;
+  transition: 0.3s;
+}
+
+.LEARNdropdown a:hover {
+  background-color: #b69567;
+  color: #f9f9f9;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.DROPDOWN:hover .LEARNdropdown {
+  display: block;
+}
