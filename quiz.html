@@ -7,18 +7,26 @@
         <link rel="stylesheet" href="styless/quizStyles.css">
     </head>
     <body>
+        <!--Loading screen-->
         <div id="loading-screen">
             <div class="loader-container">
                 <div class="spinner"></div>
                 <div class="loading-text"> Loading...</div>
             </div>
         </div>
+        <!--Loading screen ends-->
+
+        <!--Button sound audio-->
         <audio id="hover-sound" src="sounds/hover-sound.mp3" preload="auto"></audio>
         <audio id="click-sound" src="sounds/click-sound.mp3" preload="auto"></audio>    
+        
+        <!--Navbar html-->
         <div id="nav-home">
         <header class='navbar'>
             <div class="mainnav">         
                 <ul class="navitems">
+
+                    <!--Dropdown elements-->
                     <div class="DROPDOWN">
                         <button class="Learn">
                             Learn
@@ -35,10 +43,17 @@
                     <li><a href="HelpPage.html" class="Help" onclick="return confirm('Are you sure you want to leave the quiz? Your current progress will be lost!');">Help</a></li>           
                 </ul>
             </div>
+            <!--Dropdown menu ends-->
+
+            <!--Background audio-->
             <audio id="background-music" autoplay loop>
                 <source src="sounds/Kahoot Lobby Music.mp3" type="audio/mpeg">
             </audio>
+
         </header>
+        <!--Navbar HTML ends-->
+
+        <!--Quiz/Main section-->
         <main class="quiz-section">
             <span class="question-number" id="question-counter">Question 1 !!</span>
             <div id="quiz">
