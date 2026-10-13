@@ -78,7 +78,7 @@ html {
 }
 
 .sidenav {
-  width: 250px;
+  max-width: 250px;
   padding: 20px;
   position: sticky;
   margin: -5px 5px -5px -5px;

@@ -61,7 +61,7 @@ html {
 }
 
 .sidenav {
-  width: 250px;
+  max-width: 250px;
   padding: 20px;
   position: sticky;
   margin: -5px 5px -5px -5px;
@@ -104,9 +104,10 @@ html {
   background-color: #fffaf4;
   padding: 20px;
   margin-bottom: 20px;
+  margin-right: -20px;
   border-radius: 5px;
   box-shadow: 0 2px 4px #d0b187;
-  max-width: 850px;
+  max-width: 960px;
 }
 
 .content h1 {
