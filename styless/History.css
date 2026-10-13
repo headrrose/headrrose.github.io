@@ -160,6 +160,11 @@ nav {
 }
 
 #startquiz {
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-start;
+  border: rgb(193, 171, 126) 2px solid;
+  box-shadow: 0 2px 4px 0px rgba(126, 80, 55, 0.4);
   margin: 7px;
   background-color: rgb(255, 255, 219);
   border-radius: 1%;
@@ -174,6 +179,17 @@ nav {
 #startquiz:hover {
   background-color: #b77111;
   color: white;
+  border: rgb(69, 58, 58) 2px solid;
+  border-radius: 1%;
+  transition: 0.3s;
+  cursor: pointer;
+  animation: float 0.3s ease-in-out infinite;
+}
+
+#startquiz:active {
+  background-color: #625441;
+  color: white;
+  border: rgb(69, 58, 58) 2px solid;
   border-radius: 1%;
   transition: 0.3s;
   cursor: pointer;
