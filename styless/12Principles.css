@@ -14,10 +14,6 @@ html {
   scroll-behavior: smooth;
 }
 
-#uh {
-  padding: 20rem;
-}
-
 #Hero-section {
   background-color: white;
   background-image: linear-gradient(to bottom, white, #f3f0e6ff);
@@ -157,7 +153,6 @@ html {
 /* add linear-gradient(to top, white, transparent) after i figure out how i want the homepage to look*/
 body {
   background-image: linear-gradient(to right, rgb(255, 233, 210), transparent), url(https://i.pinimg.com/236x/4e/df/14/4edf14c48c80a555bc4566a681965121.jpg);
-  display: flex;
   padding: 0;
   margin: 0;
   transition: 0.3s;
