@@ -125,8 +125,9 @@ const quizData = [
     },
     {
         question: "What core technique defines stop-motion animation across forms like claymation and puppet animation?",
-        options: ["Using Keyframes automatically with computer algorithms", "Drawing frames one by one", "Manipulating objects and photographing them", "Tracing over continuous live footage"],
-        answer: "Manipulating objects and photographing them"       
+        options: ["A. Using Keyframes automatically with computer algorithms", "B. Drawing frames one by one", "C. Manipulating objects and photographing them", "D. Tracing over continuous live footage"],
+        answer: "Manipulating objects and photographing them",
+        feedback: "The correct answer is: C (head over to the learn pages to find out more)"       
     },
     {
         question:"Why do so many natural movements in animation follow an arc rather than a straight line?",
