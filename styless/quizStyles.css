@@ -14,7 +14,7 @@
 body {
   background-image: linear-gradient(to right, rgb(250, 237, 212) 1%, #fef8e6ff 10%, transparent 90%), url(https://i.pinimg.com/236x/4e/df/14/4edf14c48c80a555bc4566a681965121.jpg);
   display: flex;
-  padding: 0px;
+  padding: 0;
   margin: 0;
   overflow-x: hidden;
 }
@@ -105,7 +105,7 @@ nav {
   text-decoration: none;
   color:#b77111;
   font-size: 20px;
-  padding: 0px;
+  padding: 0;
   transition: 0.3s;
 }
 
@@ -114,7 +114,7 @@ nav {
   color: #b77111;
   font-size: 20px;
   transition: 0.3s;
-  padding: 0px;
+  padding: 0;
 }
 
 .Help:hover {
@@ -159,7 +159,7 @@ nav {
   font-family:'Times New Roman', Times, serif;
   background-color: inherit;
   color: white;
-  padding: 0px;
+  padding: 0;
   text-decoration: none;
   display: inline-block;
   transition: 0.3s;
@@ -187,7 +187,7 @@ nav {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(black);
+  box-shadow: 0 8px 16px 0 rgba(black);
   z-index: 3;
 }
 
@@ -279,8 +279,7 @@ nav {
   justify-content: start;
   display: block;
   float: right;
-  margin-top: -20px;
-  margin-right: 4rem;
+  margin: -20px auto auto 4rem;
   padding: 10px 20px;
   font-size: 1.25rem;
   background-color: #b77111;
@@ -297,7 +296,7 @@ nav {
   border: #af512c 2px solid;
   cursor: pointer;
   border-radius: 15px;
-  box-shadow: 0px 0px 20px 2px rgb(180, 127, 101, 0.5);
+  box-shadow: 0 0 20px 2px rgb(180, 127, 101, 0.5);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -339,7 +338,7 @@ nav {
   transform: scale(1.05);
   transition: 0.3s;
   cursor: pointer;
-  box-shadow: 0px 0px 20px 2px white;
+  box-shadow: 0 0 20px 2px white;
 }
 
 #home-btn:hover {
@@ -415,9 +414,7 @@ nav {
   text-align: left;
   display: block;
   float: left;
-  margin-top: -20px;
-  margin-right: 4rem;
-  margin-left: 4rem;
+  margin: -20px 4rem auto 4rem;
   padding: 10px 20px;
   font-size: 1rem;
   background-color: #c99c5d;

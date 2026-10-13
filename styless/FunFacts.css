@@ -23,7 +23,7 @@ html {
   background-image: linear-gradient(to bottom, white, #f3f0e6ff);
   padding-bottom: 10px;
   border: 2px solid white;
-  box-shadow: 0 10px 30px 0px rgba(126, 80, 55, 0.4);
+  box-shadow: 0 10px 30px 0 rgba(126, 80, 55, 0.4);
   border-bottom: 7px solid rgb(173, 147, 127);
   margin: 15px 25px auto 15px;
 }
@@ -31,7 +31,7 @@ html {
 #PrinceH1 {
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   margin: 30px 40px 40px 40px;
-  text-shadow: 4px 0px 2px #e9ddcc;
+  text-shadow: 4px 0 2px #e9ddcc;
   font-size: 4rem;
   color: #b17624;
 }
@@ -40,7 +40,7 @@ html {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   left: 0;
   margin: -20px 50px 50px 50px;
-  text-shadow: 0px 0px 0px #e8d5c1;
+  text-shadow: 0 0 0 #e8d5c1;
   color: #c4976a;
   max-width: 550px;
 }
@@ -55,7 +55,7 @@ html {
   font-size: 18px;
   transition: 0.3s;
   color: #684718;
-  text-shadow: 0px 0px 10px #ffd7ad;
+  text-shadow: 0 0 10px #ffd7ad;
   font-weight: 700;
 }
 
@@ -85,7 +85,7 @@ html {
   background-color: #d0b187;
   top: 20px;
   border-radius: 5px;
-  box-shadow: 0 10px 30px 0px rgba(215, 182, 165, 0.4);
+  box-shadow: 0 10px 30px 0 rgba(215, 182, 165, 0.4);
 }
 
 .sidenav ul {
@@ -122,7 +122,7 @@ html {
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 5px;
-  box-shadow: 0px 2px 4px #d0b187;
+  box-shadow: 0 2px 4px #d0b187;
   max-width: 850px;
 }
 
@@ -197,7 +197,7 @@ nav {
   text-decoration: none;
   color:#b77111;
   font-size: 20px;
-  padding: 0px;
+  padding: 0;
 }
 
 #startquiz {
@@ -205,7 +205,7 @@ nav {
   display: flex;
   justify-content: flex-start;
   border: rgb(193, 171, 126) 2px solid;
-  box-shadow: 0 2px 4px 0px rgba(126, 80, 55, 0.4);
+  box-shadow: 0 2px 4px 0 rgba(126, 80, 55, 0.4);
   margin: 7px;
   background-color: rgb(255, 255, 219);
   border-radius: 1%;
@@ -276,7 +276,7 @@ nav {
   text-decoration: none;
   color:#b77111;
   font-size: 20px;
-  padding: 0px;
+  padding: 0;
   transition: 0.3s;
 }
 
@@ -284,7 +284,7 @@ nav {
   text-decoration: none;
   color:#b77111;
   font-size: 20px;
-  padding: 0px;
+  padding: 0;
   transition: 0.3s;
 }
 
@@ -330,7 +330,7 @@ nav {
   font-family:'Times New Roman', Times, serif;
   background-color: inherit;
   color: white;
-  padding: 0px;
+  padding: 0;
   text-decoration: none;
   display: inline-block;
   transition: 0.3s;
