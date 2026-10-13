@@ -46,21 +46,21 @@ body {
   margin-bottom: -68px;
 }
 
-#squareP1 li {
+.squareP1 li {
   margin-bottom: 12px;
 }
 
-#squareP1 a {
+.squareP1 a {
   text-decoration: none;
   font-weight: bold;
   color: #74480a;
 }
 
-#squareP1 a:hover {
+.squareP1 a:hover {
   text-decoration: underline;
 }
 
-#squareH2 {
+.squareH2 {
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   position:relative;
   padding: 25px;
@@ -73,35 +73,20 @@ body {
   text-decoration: underline;
 }
 
-#squareP1 {
+.squareP1 {
   text-align: left;
   margin: -35px 20px -30px 20px;
   color: #88560f;
   font-size: large;
 }
 
-#squareP2 {
+.squareP2 {
   margin-top: 70px; 
   margin-left: 20px;
   margin-right: 20px;
   color: #88560f;
 }
 
-#spoiler {
-  margin: 40px 20px;
-  color: #88560f;
-}
-
-#squareP3 {
-  margin: 30px 20px;
-  color: #88560f;
-}
-
-#autoHeader {
-  margin: 100px 20px -50px 20px;
-  text-decoration: underline;
-  color: #b77111;
-}
 
 nav {
   display: flex;
