@@ -119,15 +119,19 @@ html {
   max-width: 850px;
 }
 
-.content h2 {
-  margin-top: 3px;
+.content h1 {
+  font-size: 24px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: #5d4625;
+  font-size: 26px;
+  margin: 10px 20px 10px 20px;
 }
 
-.content h4 {
+.content h2 {
+  font-size: 16px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: #b17624;
+  margin: 15px 20px;
 }
 
 .content p {

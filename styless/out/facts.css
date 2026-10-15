@@ -75,6 +75,15 @@ html {
   z-index: 2;
 }
 
+.imageOfMeowth {
+  position: absolute;
+  right: 50px;
+  filter: sepia(0.8) saturate(0.6) drop-shadow(8px 8px 4px #bba28d);
+  margin-top: -38px;
+  transform: scale(0.9);
+  z-index: 2;
+}
+
 .content-container {
   display: flex;
   max-width: 1200px;
