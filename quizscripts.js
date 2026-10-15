@@ -126,7 +126,7 @@ const quizData = [
     {
         question: "What core technique defines stop-motion animation across forms like claymation and puppet animation?",
         options: ["A. Using Keyframes automatically with computer algorithms", "B. Drawing frames one by one", "C. Manipulating objects and photographing them", "D. Tracing over continuous live footage"],
-        answer: "Manipulating objects and photographing them",
+        answer: "C. Manipulating objects and photographing them",
         feedback: "The correct answer is: C (head over to the learn pages to find out more)"       
     },
     {
@@ -275,23 +275,23 @@ function showResults() {
 
     if (score === quizData.length) {
         customMessage = "Perfect score! You're an expert!";
-        imgSrc = "images/Hapy-James.gif";
+        imgSrc = "images/out/Hapy-James.gif";
         resultMusicSrc = "sounds/Celebrate.mp3";
     } else if (score === quizData.length - 1) {
         customMessage = "Almost perfect! Great job!";
-        imgSrc = "images/Happy-James.gif";
+        imgSrc = "images/out/Happy-James.gif";
         resultMusicSrc = "sounds/Celebrate.mp3";
     } else if (score >= (quizData.length / 2) + 1) {
         customMessage = "Good job! You have a solid understanding.";
-        imgSrc = "images/Relieved-James.gif";
+        imgSrc = "images/out/Relieved-James.gif";
         resultMusicSrc = "sounds/Normal.mp3";
     } else if (score <= 2) {
         customMessage = "Don't worry, everyone starts somewhere.";
-        imgSrc = "images/Sad-James.gif";
+        imgSrc = "images/out/Sad-James.gif";
         resultMusicSrc = "sounds/Fail.mp3";
     } else {
         customMessage = "Keep practicing! You'll get better!";
-        imgSrc = "images/Normal-James.gif";
+        imgSrc = "images/out/Normal-James.gif";
         resultMusicSrc = "sounds/Normal.mp3";
     }
 
