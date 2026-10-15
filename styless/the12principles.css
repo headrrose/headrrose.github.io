@@ -12,6 +12,9 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-color: rgb(255, 254, 253) rgb(219, 200, 165);
+  scrollbar-width: thin;
+  scrollbar-gutter: stable;
 }
 
 #Hero-section {

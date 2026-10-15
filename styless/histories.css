@@ -2,6 +2,13 @@
   navigation: auto;
 }
 
+html {
+  scroll-behavior: smooth;
+  scrollbar-color: rgb(255, 254, 253) rgb(219, 200, 165);
+  scrollbar-width: thin;
+  scrollbar-gutter: stable;
+}
+
 .mainnav {
   background-color: #ffff;
   background-image: linear-gradient(to left,rgb(255, 251, 239) 20%, transparent 90%);
