@@ -275,24 +275,24 @@ function showResults() {
 
     if (score === quizData.length) {
         customMessage = "Perfect score! You're an expert!";
-        imgSrc = "image/out/Hapy-James.gif";
-        resultMusicSrc = "sounds/out/Celebrate.mp3";
+        imgSrc = "image/out/hapy-james.gif";
+        resultMusicSrc = "sounds/out/celebrate.mp3";
     } else if (score === quizData.length - 1) {
         customMessage = "Almost perfect! Great job!";
-        imgSrc = "image/out/Happy-James.gif";
-        resultMusicSrc = "sounds/out/Celebrate.mp3";
+        imgSrc = "image/out/happy-james.gif";
+        resultMusicSrc = "sounds/out/celebrate.mp3";
     } else if (score >= (quizData.length / 2) + 1) {
         customMessage = "Good job! You have a solid understanding.";
-        imgSrc = "image/out/Relieved-James.gif";
-        resultMusicSrc = "sounds/out/Normal.mp3";
+        imgSrc = "image/out/relieved-james.gif";
+        resultMusicSrc = "sounds/out/normal.mp3";
     } else if (score <= 2) {
         customMessage = "Don't worry, everyone starts somewhere.";
-        imgSrc = "image/out/Sad-James.gif";
-        resultMusicSrc = "sounds/out/Fail.mp3";
+        imgSrc = "image/out/sad-james.gif";
+        resultMusicSrc = "sounds/out/fail.mp3";
     } else {
         customMessage = "Keep practicing! You'll get better!";
-        imgSrc = "image/out/Normal-James.gif";
-        resultMusicSrc = "sounds/out/Normal.mp3";
+        imgSrc = "image/out/normal-james.gif";
+        resultMusicSrc = "sounds/out/normal.mp3";
     }
 
     music.src = resultMusicSrc;
