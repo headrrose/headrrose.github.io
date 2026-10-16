@@ -168,58 +168,38 @@ nav {
 }
 
 
+
 .rightnav {
-  justify-content: start;
+  justify-content: flex-end;
   padding: 7px 50px;
   list-style: none;
   display: flex;
   gap: 40px;
 }
 
-.Home {
-  text-decoration: none;
-  color:#b77111;
-  padding-left: 10px;
-  font-size: 20px;
-  text-align: right;
-  transition: 0.3s;
+.rightnav {
+  justify-content: start;
+  padding: 7px 50px;
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  z-index: 3;
 }
 
-
-.AboutUs {
-  text-decoration: none;
-  color:#b77111;
-  font-size: 20px;
-  padding: 0;
-  transition: 0.3s;
-}
-
-.Help {
+.right-navs {
   text-decoration: none;
   color:#b77111;
   font-size: 20px;
   padding: 0;
   transition: 0.3s;
+  display: inline-block;
 }
 
-
-.Help:hover {
+.right-navs:hover {
   text-decoration: underline;
-  font-size: 22px;
-  transition: 0.3s;
-}
-
-
-.Home:hover {
-  text-decoration:underline;
-  font-size: 22px;
-  transition: 0.3s;
-}
-
-
-.AboutUs:hover {
-  text-decoration:underline;
-  font-size: 22px;
+  cursor: pointer;
+  transform: scale(1.1);
+  display: inline-block;
   transition: 0.3s;
 }
 
@@ -273,6 +253,7 @@ nav {
   background-color: #f9f9f9;
   min-width: 160px;
   z-index: 3;
+  box-shadow: 0 10px 30px rgba(126, 80, 55, 0.4);
 }
 
 .LEARNdropdown a {
