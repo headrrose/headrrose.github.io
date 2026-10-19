@@ -95,6 +95,7 @@ align-items: flex-start;
 
 .sidenav {
   max-width: 250px;
+  width: 100%;
   padding: 20px;
   position: sticky;
   margin: -5px 5px -5px -5px;
