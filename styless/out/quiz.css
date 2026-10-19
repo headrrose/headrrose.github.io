@@ -17,8 +17,7 @@ html {
   height: 4.45rem;
 }
 
-/* add linear-gradient(to top, white, transparent) after i figure out how i want the homepage to look*/
-body {
+ body {
   background-color: #fae8bd;
   background-image: linear-gradient(to right, rgb(250, 237, 212) 1%, #fef8e6ff 10%, transparent 90%), url(https://i.pinimg.com/236x/4e/df/14/4edf14c48c80a555bc4566a681965121.jpg);
   padding: 0;
