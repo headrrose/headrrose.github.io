@@ -74,7 +74,7 @@ const quizData = [
         answer: "24 frames per second"
     },
     {
-        question: "Who discovered the 12 principles of animation?",
+        question: "Who developed the 12 principles of animation?",
         options: ["Frank Thomas and Ollie Johnston", "Muri Mytton and Jasper Jacinto", "Reynold Dwight and Connor McMurphy", "A team of unnamed animators"],
         answer: "Frank Thomas and Ollie Johnston"
     },

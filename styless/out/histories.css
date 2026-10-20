@@ -137,6 +137,8 @@ html {
 .content p {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: #c4976a;
+  margin: 10px 20px 10px 20px;
+  font-size: 15px;
 }
 
  body {
